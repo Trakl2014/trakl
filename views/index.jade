@@ -3,4 +3,12 @@ extends layout
 block content
   h1= title
   p Welcome to #{title}
-  
+  form( method="post")
+            div
+                div
+                    span.label Push notification :
+                    input(type="text", name="message", id="<message></message>")
+                
+                div#pushSubmit
+                    input(type="submit", value="Save")
+        a(href="/")!= "Back to Employee List"
