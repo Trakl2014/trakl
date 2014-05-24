@@ -22,7 +22,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', routes);
 app.use('/api', api);
 
-mongoose.connect('mongodb://localhost:27017/trakl');
+// mongoose.connect('mongodb://localhost:27017/trakl');
+mongoose.connect('mongodb://trakluser:resulkart@ds033679.mongolab.com:33679/heroku_app25551367');
 
 http.createServer(app).listen(app.get('port'), function() {
     console.log('Express server listening on port ' + app.get('port'));
