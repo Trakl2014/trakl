@@ -41,7 +41,7 @@ var updateTrafficData = function(journeys) {
         journey = journeys[i];
 
         traffic.getJourneyTraffic(journey.journeyRef, function(trafficData) {
-            if(trafficData) {
+            if(trafficData.substr(0, 28) !== 'The page cannot be displayed' ) {
                 var trafficDetails = JSON.parse(trafficData);
                 var isImproving = trafficDetails.minutes < trafficDetails.lastMinutes;
                 var isBetter = isImproving ? 'better' : 'worse';

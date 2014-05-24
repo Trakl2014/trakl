@@ -6,8 +6,8 @@ var notification = require('../services/notification.js');
  * GET home page.
  */
 
-router.get('/', function(req, res) {
-    res.render('index', {
+router.get('/test', function(req, res) {
+    res.render('test', {
         title: 'The begining of of hackakl project'
     });
 });
