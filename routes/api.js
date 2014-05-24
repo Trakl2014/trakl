@@ -11,8 +11,14 @@ router.post('/travel-time', function(req, res) {
   var userId = req.param('userId');
   var journeyRef = req.param('journeyRef');
 
-  // console.log('userId: ' + userId);
-  // console.log('journeyRef: ' + journeyRef);
+  if(!userId) { // get params from json in body
+    userId = req.body.userId;
+    journeyRef = req.body.journeyRef;
+  }
+
+  console.log('body: ' + JSON.stringify(req.body));
+  console.log('userId: ' + userId);
+  console.log('journeyRef: ' + journeyRef);
 
   travelTime.userId = userId;
   travelTime.journeyRef = journeyRef;
