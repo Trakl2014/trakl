@@ -1,40 +1,98 @@
-var express = require('express');
-var router = express.Router();
-var mongo = require('mongoose');
+var router = require('express').Router();
 var TravelTime = require('../models/travel-time');
+var journeyData = require('../services/journey-data');
+
+/*
+ * Private methods
+ */
+
+var saveTravelTime = function(travelTime, res) {
+
+    travelTime.save(function(err) {
+
+        if(err) {
+            res.statusCode = 500;
+            return res.send(err);
+        }
+
+        res.json({
+            message: 'travel time saved'
+        });
+
+    });
+
+};
+
+
+/*
+ * GET user journey
+ */
+
+router.get('/travel-time', function(req, res) {
+
+    var userId = req.param('userId');
+
+    TravelTime.findOne({userId: userId}, function(err, result) {
+        if(err) {
+            res.statusCode = 500;
+            return res.send(err);
+        }
+        res.json(result);
+    });
+
+});
+
+
+/*
+ * POST new user journey
+ */
 
 router.post('/travel-time', function(req, res) {
 
-  // TODO: Refactor this out into its own module
+    // TODO: Refactor this out into its own module
 
-  var travelTime = new TravelTime();
-  var userId = req.param('userId');
-  var journeyRef = req.param('journeyRef');
+    var travelTime = new TravelTime();
 
-  if(!userId) { // get params from json in body
-    userId = req.body.userId;
-    journeyRef = req.body.journeyRef;
-  }
+    // Try to get from query/form parameters
+    var userId = req.param('userId');
+    var journeyRef = req.param('journeyRef');
 
-  console.log('body: ' + JSON.stringify(req.body));
-  console.log('userId: ' + userId);
-  console.log('journeyRef: ' + journeyRef);
+    if(!userId) { // Extract from json body
+        userId = req.body.userId;
+        journeyRef = req.body.journeyRef;
+    }
 
-  travelTime.userId = userId;
-  travelTime.journeyRef = journeyRef;
+    //console.log('userId: ' + userId);
+    //console.log('journeyRef: ' + journeyRef);
+    //console.log('body: ' + JSON.stringify(req.body));
 
-  travelTime.save(function(err) {
+    // Ensure existing user is removed before saving to prevent duplicates
+    TravelTime.findOneAndRemove({userId: userId}, function(err) {
+        if(err) {
+            res.statusCode = 500;
+            return res.send(err);
+        }
 
-      if(err) {
-        res.send(err);
-        return;
-      }
+        travelTime.userId = userId;
+        travelTime.journeyRef = journeyRef;
+        saveTravelTime(travelTime, res);
+    });
 
-      res.json({
-        message: 'travel time saved'
-      });
+});
 
-  });
+
+/*
+ * GET journey list
+ */
+
+router.get('/journeys', function(req, res) {
+
+    console.log('Calling Traffic API ...');
+
+    journeyData.getJourneyList(function(response) {
+        console.log('Got response from traffic api');
+        res.json(response);
+    });
 
 });
 

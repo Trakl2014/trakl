@@ -1,0 +1,88 @@
+var intervalHandle = null;
+var traffic = require('./journey-data');
+var TravelTime = require('../models/travel-time');
+var util = require('util');
+
+var FIVE_MINUTES = 1000 * 60 * 5;
+
+/*
+ * Private methods
+ */
+
+var saveTraffic = function(userId, trafficData) {
+
+    var trafficDetails = JSON.parse(trafficData);
+
+    var trafficStatus = {
+        travelMinutes: trafficDetails.minutes,
+        isImproving: trafficDetails.minutes < trafficDetails.lastMinutes
+    };
+
+    var query = { userId: userId };
+    TravelTime.update(query, trafficStatus, function(err) {
+        if(err) {
+            console.log('Error: ' + err.message);
+        } else {
+            console.log('Travel time updated for userId: ' + userId);
+        }
+    });
+
+};
+
+var updateTrafficData = function(journeys) {
+
+    var journey = {};
+
+    for(var i = 0; i < journeys.length; i++) {
+
+        journey = journeys[i];
+
+        traffic.getJourneyTraffic(journey.journeyRef, function(trafficData) {
+            if(trafficData) {
+                saveTraffic(journey.userId, trafficData);
+            } else {
+                console.log('No traffic data returned for ref: ' + journey.journeyRef);
+            }
+        });
+
+    }
+
+};
+
+var activatePolling = function(storedJourneys) {
+
+    // Update immediatesly
+    updateTrafficData(storedJourneys);
+
+    // Update every 5 minutes
+    setInterval(function() {
+        updateTrafficData(storedJourneys);
+    }, FIVE_MINUTES);
+
+};
+
+
+/*
+ * Public exported object
+ */
+
+var trafficPolling = {
+
+    startPolling: function() {
+
+        var journeys;
+        TravelTime.find({}, function(err, storedJourneys) {
+            if(!err && storedJourneys) {
+                activatePolling(storedJourneys);
+            }
+        });
+
+    },
+
+    stopPolling: function() {
+        clearInterval(intervalHandle);
+    }
+
+};
+
+module.exports = trafficPolling;

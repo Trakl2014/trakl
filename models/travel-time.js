@@ -4,8 +4,8 @@ var Schema       = mongoose.Schema;
 var TravelTimeSchema   = new Schema({
     userId: String,
     journeyRef: String,
-    travelMinutes: Number,
-    isImproving: Boolean
+    travelMinutes: String,
+    isImproving: String
 });
 
 module.exports = mongoose.model('TravelTime', TravelTimeSchema);

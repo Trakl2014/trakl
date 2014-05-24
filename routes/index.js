@@ -1,6 +1,6 @@
-var express = require('express');
-var router = express.Router();
+var router = require('express').Router();
 var UrbanAirshipPush = require('urban-airship-push');
+var journeyData = require('../services/journey-data');
 
 /*
  * GET home page.
@@ -11,6 +11,7 @@ router.get('/', function(req, res) {
         title: 'The begining of of hackakl project'
     });
 });
+
 
 /*
  * GET submitted page.
@@ -87,15 +88,6 @@ router.post('/', function(req, res) {
 
     console.log(res.locals.ok);
 
-});
-
-router.get('/journeylist', function(req, res) {
-    var journeyList = require('./getfromTrafficAPI.js');
-    console.log('Calling traffic api');
-		journeyList.getJourneyList(function(data) {
-      console.log('got response from traffic api');
-      res.json(data);
-    });
 });
 
 module.exports = router;
