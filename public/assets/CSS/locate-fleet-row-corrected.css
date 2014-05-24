@@ -1,0 +1,650 @@
+/* clears */
+body *
+{
+	font-family:Verdana;
+}
+.clear-both
+{
+	clear:both;
+}
+.scroll-div
+{
+	overflow:auto;
+}
+.truncate
+{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.hor-seperator
+{
+	height:1px; border-bottom:1px solid #fff;
+	background-color:#ddd;
+}
+
+.vir-seperator
+{
+	width:1px; border-right:1px solid #fff;
+	background-color:#ddd;
+}
+
+/* buttons */
+.buttons
+{
+	cursor:pointer;
+}
+.buttons:hover
+{
+	background-color:#777;
+}
+/* floats */
+.float-left
+{
+	float:left;
+}
+.float-right
+{
+	float:right;
+}
+.left-text
+{
+	text-align:left;
+}
+.center-text
+{
+	text-align:center;
+}
+.align-bottom
+{
+	vertical-align:bottom;
+}
+/* corners */
+.rounded-corners
+{
+	-webkit-border-radius: 6px;	
+	-moz-border-radius: 6px; 
+	border-radius: 6px;
+}
+.large-rounded-corners
+{
+	-webkit-border-radius: 12px;	
+	-moz-border-radius: 12px; 
+	border-radius: 12px;
+}
+.sml-rounded-corners
+{
+	-webkit-border-radius: 3px;	
+	-moz-border-radius: 3px; 
+	border-radius: 3px;
+}
+
+/* borders */
+.red-border{border:2px solid red;}
+.grey-border{border:1px solid #ccc;}
+.dark-grey-border{border:1px solid #aaa;}
+.bottom-border-dark-grey{border-bottom:1px solid #999999;}
+.top-border-dark-grey{border-top:1px solid #999999;}
+.right-border-dark-grey{border-right:1px solid #999999;}
+.left-border-dark-grey{border-left:1px solid #999999;}
+
+.p-2 {padding: 2px 2px 2px 2px}
+.p-5 {padding: 5px 5px 5px 5px}
+.plr-2{padding-left:2px;padding-right:2px;}
+.plr-5{padding-left:5px;padding-right:5px;}
+
+/* margins */
+.m-5 {margin: 5px}
+.m-2 {margin: 2px}
+
+/* margins-left */
+.ml-2 {margin-left:2px;}
+.ml-3 {margin-left:3px;}
+.ml-5{margin-left:5px;}
+.ml-10{margin-left:10px;}
+.ml-15{margin-left:15px;}
+.ml-20{margin-left:20px;}
+.ml-40{margin-left:40px;}
+.ml-50{margin-left:50px;}
+.ml-101{margin-left:101px;}
+
+/* margins-right */
+.mr-2{margin-right:2px;}
+.mr-3{margin-right:3px;}
+.mr-5{margin-right:5px;}
+.mr-10{margin-right:10px;}
+.mr-15{margin-right:15px;}
+.mr-20{margin-right:20px;}
+.mr-30{margin-right:30px;}
+
+/* margins-top */
+.mt-2{margin-top:2px;}
+.mt-3{margin-top:3px;}
+.mt-5{margin-top:5px;}
+.mt-7{margin-top:7px;}
+.mt-10{margin-top:10px;}
+.mt-15{margin-top:15px;}
+.mt-20{margin-top:20px;}
+.mt-30{margin-top:30px;}
+
+/*margin-bottoms*/
+.mb-2{margin-bottom:2px;}
+.mb-3{margin-bottom:3px;}
+.mb-5{margin-bottom:5px;}
+
+/*paddings-left*/
+.pl-2{padding-left:2px}
+
+/*paddings-right*/
+.pr-2{padding-right:2px}
+
+/* widths */
+.w10{width:10px;}
+.w18{width:18px;}
+.w20{width:20px;}
+.w24{width:24px;}
+.w30{width:30px;}
+.w40{width:40px;}
+.w50{width:50px;}
+.w60{width:60px;}
+.w70{width:70px;}
+.w75{width:75px;}
+.w80{width:80px;}
+.w90{width:90px;}
+.w100{width:100px;}
+.w110{width:110px;}
+.w130{width:130px;}
+.w150{width:150px;}
+.w200{width:200px;}
+.w300{width:300px;}
+.w350{width:350px;}
+.w400{width:400px;}
+.w450{width:450px;}
+.w475{width:475px;}
+.w500{width:500px;}
+.w525{width:525px;}
+.w600{width:600px;}
+.w600{width:650px;}
+
+.w100p{width:100%;}
+
+
+/* heights */
+.h5{height:5px;line-height:5px;}
+.h9{height:9px;line-height:9px;}
+.h10{height:10px;line-height:10px;}
+.h13{height:13px;line-height:13px;}
+.h15{height:15px;line-height:15px;}
+.h18{height:18px;line-height:18px;}
+.h20{height:20px;line-height:20px;}
+.h24{height:24px;line-height:24px;}
+.h30{height:30px;line-height:30px;}
+.h32{height:32px;line-height:32px;}
+.h34{height:34px;line-height:34px;}
+.h36{height:36px;line-height:36px;}
+.h40{height:40px;line-height:40px;}
+.h45{height:45px;line-height:45px;}
+.h50{height:50px;line-height:40px;}
+.h56{height:56px;}
+.h60{height:60px;}
+.h70{height:70px;}
+.h75{height:75px;}
+.lh75{line-height:75px;}
+.h80{height:80px;}
+.lh60{line-height:60px;}
+.lh80{line-height:80px;}
+.h82{height:82px;}
+.lh82{line-height:82px;}
+.h84{height:84px;}
+.lh84{line-height:84px;}
+.h90{height:90px;}
+.h100{height:100px;}
+.h120{height:120px;}
+.h140{height:140px;}
+.h150{height:150px;}
+.h152{height:152px;}
+.h155{height:155px;}
+.h160{height:160px;}
+.h165{height:165px;}
+.h170{height:170px;}
+.h176{height:175px;}
+.h180{height:180px;}
+.h185{height:185px;}
+.h192{height:192px;}
+.h195{height:195px;}
+.h200{height:200px;}
+.h250{height:250px;}
+.h300{height:300px;}
+.h400{height:400px;}
+.h450{height:450px;}
+.h600{height:600px;}
+.h650{height:650px;}
+.h700{height:700px;}
+.h750{height:750px;}
+.h800{height:800px;}
+
+/* font sizes & text */
+
+.b
+{
+	font-weight:bold;
+}
+.i
+{
+	font-style:italic;
+}
+.font-18
+{
+	font-size:18pt;
+	color:#444;
+}
+.font-14
+{
+	font-size:14pt;
+	color:#444;
+}
+.font-12
+{
+	font-size:12pt; 
+}
+.font-11
+{
+	font-size:11pt; 
+}
+.font-10
+{
+	font-size:10pt; 
+}
+.font-9
+{
+	font-size:9pt; 
+}
+.font-8
+{
+	font-size:8pt; 
+}
+.font-7
+{
+	font-size:7pt;
+}
+.font-6
+{
+	font-size:6pt;
+}
+.bold{
+    font-weight:bold;
+}
+.white-text{
+    color:#fff;
+}
+.light-grey-text
+{
+	color:#999;
+}
+.grey-text
+{
+	color:#777;
+}
+.dark-grey-text
+{
+	color:#333;
+}
+.red-text
+{
+	color:red;
+}
+/* icons */
+.icons
+{
+	background-position:center; background-repeat:no-repeat;
+}
+.icons-recall 
+{
+    background-image:url(images/recall-load-plan-icon.png);
+}
+.icons-close
+{
+	background-image:url(images/close-message-pop-up.png);
+}
+.icons-close:hover
+{
+	background-image:url(images/close-message-pop-up-hover.png);
+}
+.icons-process-job
+{
+	background-image:url(../images/icon-process-job.png);
+}
+.icons-save
+{
+	background-image:url(../images/save-icon.png);
+}
+.icons-chat
+{
+	background-image:url(../images/icon-chat.png);
+}
+.icons-printer
+{
+	background-image:url(../images/icon-printer.png);
+}
+.icons-details
+{
+	background-image:url(../images/icon-detail.png);
+}
+.icons-history
+{
+	background-image:url(../images/icon-history.png);
+}
+.icons-broadcast
+{
+	background-image:url(../images/icon-broadcast.png);
+}
+.icons-alert
+{
+	background-image:url(images/icon-alerts.png);
+}
+.icons-msgs
+{
+	background-image:url(images/icon-msgs.png);
+}
+.icons-online
+{
+	background-image:url(images/icon-online.png);
+}
+.icons-offline
+{
+	background-image:url(images/icon-offline.png);
+}
+.icons-connected
+{
+	background-image:url(images/icon-connected.png);
+}
+.icons-disconnected
+{
+	background-image:url(images/icon-disconnected.png);
+}
+.icons-ignition-on
+{
+	background-image:url(images/icon-ignition-on.png);
+}
+.icons-ignition-off
+{
+	background-image:url(images/icon-ignition-off.png);
+}
+.icons-door-on
+{
+	background-image:url(images/icon-door-on.png);
+}
+.icons-door-off
+{
+	background-image:url(images/icon-door-off.png);
+}
+.icons-lift-on
+{
+	background-image:url(images/icon-lift-on.png);
+}
+.icons-lift-off
+{
+	background-image:url(images/icon-lift-off.png);
+}
+.icons-platform-on
+{
+	background-image:url(images/icon-platform-on.png);
+}
+.icons-platform-off
+{
+	background-image:url(images/icon-platform-off.png);
+}
+.icons-jobtype-0
+{
+	background-image:url(images/icon-jobtype-loading.png);
+}
+.icons-jobtype-1
+{
+	background-image:url(images/icon-jobtype-unload.png);
+}
+.icons-stop
+{
+	background-image:url(../images/stop1.png);
+}
+.icons-speed
+{
+	background-image:url(../images/speed.png);
+}
+
+/* specific styles */
+.row-details{
+    /*cursor:pointer;*/
+}
+.plate {
+    cursor:pointer;
+}
+
+.custohours{
+     cursor:pointer;
+}
+.fleet-rows 
+{
+	
+}
+
+.fleet-rows .speed
+{
+	text-align:center; font-size:10pt; font-weight:bold; line-height:30px;
+}
+.fleet-rows h1
+{
+	padding:0px; margin:0px; height:30px; line-height:30px;
+}
+.dir {background-position:center;background-repeat:no-repeat;}
+.dir-top-right{background-image:url(images/dir-top-right.png);}
+.dir-top-left{background-image:url(images/dir-top-left.png);}
+.dir-bottom-left{background-image:url(images/dir-bottom-left.png);}
+.dir-bottom-right{background-image:url(images/dir-bottom-right.png);}
+.dir-top{background-image:url(images/dir-top.png);}
+.dir-bottom{background-image:url(images/dir-bottom.png);}
+.dir-right{background-image:url(images/dir-right.png);}
+.dir-left{background-image:url(images/dir-left.png);}
+/* tab-control */
+.tab-control{padding:0px; margin:0px; margin-top:7px; border-bottom:1px solid #bcbcbc; width:100%; height:30px;}
+.tab-control li
+{
+	float:left; height:29px; line-height:29px; border:1px solid #bcbcbc; margin-left:2px;
+	-webkit-border-radius: 6px 6px 0px 0px;
+	-moz-border-radius:6px 6px 0px 0px;
+    border-radius: 6px 6px 0px 0px;
+    list-style:none; background-color:#fff; padding-left:8px; padding-right:8px;
+    font-size:8pt; font-weight:bold; color:#222; cursor:pointer;
+}
+.tab-control .active
+{
+	border-bottom:1px solid #fff;
+}
+
+/* colors */
+.red {background-color:red; color:#fff;}
+.white {background-color:white; color:#000;}
+.beige{background-color:#f1eee7;}
+.light-grey{background-color:#efefef;	color:#333;}
+.grey{background-color:grey;	color:#fff;}
+.green{background-color:green;	color:#fff;}
+
+/* also used in Tier */
+.gold{background-color:#cd9c59; color:#333;}
+.silver{background-color:#a2a2a2; color:#333}
+.platinum{background-color:#616161;	color:#fff;}
+.blue { background-color:#2597d5; color:#fff; }
+.io { background-color:#cc3300; color:#fff; }
+
+/* trip status */
+.rejected { background-color:#cc3300; color:#fff; }
+.manual { background-color:#595959; color:#fff; }
+.un-sch { background-color:#bfbfbf; color:#333; }
+.sch { background-color:#bfbfbf; color:#333; }
+.started { background-color:#fcd5b4; color:#333; }
+.arrpu { background-color:#0066ff; color:#fff; }
+.pob { background-color:#008080; color:#fff; }
+.dnac { background-color:#ff6699; color:#fff; }
+.completed { background-color:#00b050; color:#fff; }
+.trip-failed { background-color:#ff0000; color:#fff; }
+.cancelled { background-color:#ffc000; color:#000; }
+
+
+/* FLight Class */
+.first-class { background-color:#ff0000; color:#fff; }
+.business-class { background-color:#366092; color:#fff; }
+
+/* map view */
+/*background-image:url(images/map.png); */
+.map-view
+{
+	width:98%; height:220px;	
+	background-position:center;
+	margin-left:auto; margin-right:auto; border:1px solid #333;
+}
+
+.flt-arr
+{
+	background-image:url(images/flight-arr.png);
+}
+
+.flt-dep
+{
+	background-image:url(images/flight-dep.png);
+}
+.findonmap:hover
+{
+    text-decoration: underline;
+    cursor:hand;
+}
+/* classes for fleet / job */
+.highloader
+{
+	border:1px solid #ccc;
+}
+.highloader .morebuttons
+{
+	display:none;
+}
+.highloader:hover
+{
+	background-color:none;
+	color:none;
+	background-color:#fbfccf;
+	color:#222; border:1px solid #bbb;	
+}
+.highloader:hover .morebuttons
+{
+    display:block;
+}
+
+/* chat pop up */
+.message
+{
+	padding-bottom: 5px;
+	padding-top: 5px;
+	border-bottom: 1px dashed #bcbcbc;
+}
+.message-text { font-size:9pt; color:#333; }
+
+.chat-from { font-size:9pt; font-weight:bold; color:#086fed;  }
+
+.timeago { font-size:7pt; color:#777; font-style:italic; }
+
+.zoom-in {
+    background-image: url(/assets/Images/zoom_in_black.png);
+    height: 24px;
+    width: 24px;
+}
+
+.zoom-in:hover {
+    background-image: url(/assets/Images/zoom_in_grey.png);
+    cursor: pointer;
+    height: 24px;
+    width: 24px;
+}
+
+.zoom-out {
+    background-image: url(/assets/Images/zoom_out_black.png);
+    cursor: pointer;
+    height: 24px;
+    width: 24px;
+}
+
+.zoom-out:hover {
+    background-image: url(/assets/Images/zoom_out_grey.png);
+    height: 24px;
+    width: 24px;
+}
+
+.timing {
+    height: 100%;
+    position: absolute;
+    background-image: url(/assets/Images/transp-1px.png);
+    background-repeat: repeat-x;
+}
+
+.tip dt {
+    font-weight: bold;
+    background-image: url(/assets/Images/transp-1px.png);
+    background-repeat: repeat-x;
+}
+
+.tip dd {
+    padding-bottom: 10px;
+}
+
+.jobstatus-loading { /* 1 */
+    background-color: #f9e282;    
+}
+
+.jobstatus-loadcompleted { /* 2 */
+    background-color: #c7db89;
+}
+
+.jobstatus-enroute { /* 3 */
+    background-color: #9ac5ff;
+}
+
+.jobstatus-enrouteairside { /* 4 */
+    background-color: #ffac86;
+}
+
+.jobstatus-atbay { /* 5 */
+    background-color: #b98d7a;
+}
+
+.jobstatus-engaged { /* 6 */
+    background-color: #d683c6;
+}
+
+.jobstatus-disengaged { /* 7 */
+    background-color: #7b86b8;
+}
+
+.jobstatus-leavebay { /* 8 */
+    background-color: #dab10a;
+}
+
+.jobstatus-completed { /* 9 */
+    background-color: #ccc4a3;
+}
+
+.driverlog {
+    background-color: #066D02;
+}
+
+.driverlogin {
+    background-color: #066D02;
+}
+
+.driverlogout {
+    background-color: #ff4545;
+}
+
+.color-A380 {
+    background: #DFAA2C none;
+}
+.color-nonA380 {
+    background: #97AD2F none;
+}

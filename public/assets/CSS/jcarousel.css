@@ -1,0 +1,70 @@
+
+.jcarousel {
+    position: relative;
+    overflow: hidden;
+    /* You need at least a height, adjust this to your needs */
+    height: 80px;
+    background: #fff;
+    border: 2px solid #fff;
+    -webkit-border-radius: 2px;
+       -moz-border-radius: 2px;
+            border-radius: 2px;
+}
+
+/** Navigation carousel controls **/
+.jcarousel-wrapper
+{
+	
+	position: relative;
+	height: 80px;
+	left:5px;
+}
+.jcarousel-wrapper .jcarousel-prev,
+.jcarousel-wrapper .jcarousel-next {
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    background: #4E443C;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 0 0 1px #000;
+    font: 16px/29px Arial, sans-serif;
+    -webkit-border-radius: 10px;
+       -moz-border-radius: 10px;
+            border-radius: 10px;
+    -webkit-box-shadow: 0 0 2px #999;
+       -moz-box-shadow: 0 0 2px #999;
+            box-shadow: 0 0 2px #999;
+}
+
+.jcarousel-wrapper .jcarousel-prev {
+    left: -10px;
+    top: 10px;
+    text-indent: -4px;
+}
+
+.jcarousel-wrapper .jcarousel-next {
+    right: -10px;
+    top: 10px;
+    text-indent: 4px;
+}
+
+.jcarousel-wrapper .jcarousel-prev.inactive,
+.jcarousel-wrapper .jcarousel-next.inactive {
+    opacity: .5;
+    cursor: default;
+}
+
+.jcarousel .delete
+{
+    visibility:hidden;
+}
+.jcarousel .jcarousel-item:hover .delete
+{
+    visibility:visible;
+    z-index:1000;
+    float:right;
+}
+

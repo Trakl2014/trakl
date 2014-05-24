@@ -1,0 +1,1657 @@
+{
+    "tns:findJourneyByReferenceResponse": {
+        "$": {
+            "xmlns:rem": "http://remote.service.callcenter.nzta.govt.nz",
+            "xmlns:tns": "https://infoconnect.highwayinfo.govt.nz/schemas/ssdf2",
+            "xmlns:xsd": "http://www.w3.org/2001/XMLSchema",
+            "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance"
+        },
+        "tns:return": [
+            {
+                "$": {
+                    "xmlns:jbi": "http://java.sun.com/xml/ns/jbi/wsdl-11-wrapper",
+                    "xsi:type": "journeyDTO"
+                },
+                "tns:averageSpeed": [
+                    "33.56"
+                ],
+                "tns:bubbleDownValue": [
+                    "5.0"
+                ],
+                "tns:bubbleUpValue": [
+                    "5.0"
+                ],
+                "tns:correctionFactor": [
+                    "0"
+                ],
+                "tns:end": [
+                    "Ian McKinnon Dr"
+                ],
+                "tns:expectedMaximum": [
+                    "99"
+                ],
+                "tns:expectedMinimum": [
+                    "1"
+                ],
+                "tns:id": [
+                    "954"
+                ],
+                "tns:lastEstimate": [
+                    "11"
+                ],
+                "tns:lastEstimateTime": [
+                    "2014-05-24T14:20:29.377+12:00"
+                ],
+                "tns:lastUnadjustedEstimate": [
+                    "10.78"
+                ],
+                "tns:name": [
+                    "R04-NB - Dominion Rd"
+                ],
+                "tns:reference": [
+                    "R04-NB"
+                ],
+                "tns:segments": [
+                    {
+                        "tns:averageOccupancy": [
+                            "1.0"
+                        ],
+                        "tns:averageSpeed": [
+                            "20.42"
+                        ],
+                        "tns:carriagewaySegmentId": [
+                            "10362"
+                        ],
+                        "tns:defaultSpeed": [
+                            "50.0"
+                        ],
+                        "tns:endLocation": [
+                            {
+                                "tns:description": [
+                                    "2924"
+                                ],
+                                "tns:id": [
+                                    "16290"
+                                ],
+                                "tns:latitude": [
+                                    "-36.909576"
+                                ],
+                                "tns:longitude": [
+                                    "174.740128"
+                                ],
+                                "tns:nzmgEast": [
+                                    "0.0"
+                                ],
+                                "tns:nzmgNorth": [
+                                    "0.0"
+                                ],
+                                "tns:nztmEast": [
+                                    "1755010.56"
+                                ],
+                                "tns:nztmNorth": [
+                                    "5913747.32"
+                                ],
+                                "tns:roadId": [
+                                    "0"
+                                ],
+                                "tns:rp": [
+                                    "0.0"
+                                ],
+                                "tns:rs": [
+                                    "0"
+                                ],
+                                "tns:speedLimit": [
+                                    "0"
+                                ]
+                            }
+                        ],
+                        "tns:id": [
+                            "6891"
+                        ],
+                        "tns:lastReadingTime": [
+                            "2014-05-24T14:19:00.000+12:00"
+                        ],
+                        "tns:linkId": [
+                            "1208"
+                        ],
+                        "tns:linkSequence": [
+                            "1"
+                        ],
+                        "tns:reliability": [
+                            "0.0"
+                        ],
+                        "tns:sectionEnd": [
+                            "1342"
+                        ],
+                        "tns:sectionLength": [
+                            "0.147"
+                        ],
+                        "tns:sectionName": [
+                            "R04-NB 2990-2924"
+                        ],
+                        "tns:sectionOrder": [
+                            "0"
+                        ],
+                        "tns:sectionStart": [
+                            "1344"
+                        ],
+                        "tns:sectionTime": [
+                            "0.43"
+                        ],
+                        "tns:segmentType": [
+                            {
+                                "tns:groupType": [
+                                    "J"
+                                ],
+                                "tns:id": [
+                                    "5"
+                                ],
+                                "tns:name": [
+                                    "Arterials"
+                                ]
+                            }
+                        ],
+                        "tns:startLocation": [
+                            {
+                                "tns:description": [
+                                    "2990"
+                                ],
+                                "tns:id": [
+                                    "16272"
+                                ],
+                                "tns:latitude": [
+                                    "-36.910793"
+                                ],
+                                "tns:longitude": [
+                                    "174.739594"
+                                ],
+                                "tns:nzmgEast": [
+                                    "0.0"
+                                ],
+                                "tns:nzmgNorth": [
+                                    "0.0"
+                                ],
+                                "tns:nztmEast": [
+                                    "1754967.22"
+                                ],
+                                "tns:nztmNorth": [
+                                    "5913593.57"
+                                ],
+                                "tns:roadId": [
+                                    "0"
+                                ],
+                                "tns:rp": [
+                                    "0.0"
+                                ],
+                                "tns:rs": [
+                                    "0"
+                                ],
+                                "tns:speedLimit": [
+                                    "0"
+                                ]
+                            }
+                        ],
+                        "tns:totalVolume": [
+                            "10.0"
+                        ]
+                    },
+                    {
+                        "tns:averageOccupancy": [
+                            "1.0"
+                        ],
+                        "tns:averageSpeed": [
+                            "20.42"
+                        ],
+                        "tns:carriagewaySegmentId": [
+                            "10634"
+                        ],
+                        "tns:defaultSpeed": [
+                            "50.0"
+                        ],
+                        "tns:endLocation": [
+                            {
+                                "tns:description": [
+                                    "2146"
+                                ],
+                                "tns:id": [
+                                    "16291"
+                                ],
+                                "tns:latitude": [
+                                    "-36.904613"
+                                ],
+                                "tns:longitude": [
+                                    "174.741745"
+                                ],
+                                "tns:nzmgEast": [
+                                    "0.0"
+                                ],
+                                "tns:nzmgNorth": [
+                                    "0.0"
+                                ],
+                                "tns:nztmEast": [
+                                    "1755169.34"
+                                ],
+                                "tns:nztmNorth": [
+                                    "5914293.62"
+                                ],
+                                "tns:roadId": [
+                                    "0"
+                                ],
+                                "tns:rp": [
+                                    "0.0"
+                                ],
+                                "tns:rs": [
+                                    "0"
+                                ],
+                                "tns:speedLimit": [
+                                    "0"
+                                ]
+                            }
+                        ],
+                        "tns:id": [
+                            "6901"
+                        ],
+                        "tns:lastReadingTime": [
+                            "2014-05-24T14:19:00.000+12:00"
+                        ],
+                        "tns:linkId": [
+                            "1208"
+                        ],
+                        "tns:linkSequence": [
+                            "2"
+                        ],
+                        "tns:reliability": [
+                            "0.0"
+                        ],
+                        "tns:sectionEnd": [
+                            "1339"
+                        ],
+                        "tns:sectionLength": [
+                            "0.571"
+                        ],
+                        "tns:sectionName": [
+                            "R04-NB 2924-2146"
+                        ],
+                        "tns:sectionOrder": [
+                            "0"
+                        ],
+                        "tns:sectionStart": [
+                            "1342"
+                        ],
+                        "tns:sectionTime": [
+                            "1.68"
+                        ],
+                        "tns:segmentType": [
+                            {
+                                "tns:groupType": [
+                                    "J"
+                                ],
+                                "tns:id": [
+                                    "5"
+                                ],
+                                "tns:name": [
+                                    "Arterials"
+                                ]
+                            }
+                        ],
+                        "tns:startLocation": [
+                            {
+                                "tns:description": [
+                                    "2924"
+                                ],
+                                "tns:id": [
+                                    "16273"
+                                ],
+                                "tns:latitude": [
+                                    "-36.909576"
+                                ],
+                                "tns:longitude": [
+                                    "174.740128"
+                                ],
+                                "tns:nzmgEast": [
+                                    "0.0"
+                                ],
+                                "tns:nzmgNorth": [
+                                    "0.0"
+                                ],
+                                "tns:nztmEast": [
+                                    "1755010.56"
+                                ],
+                                "tns:nztmNorth": [
+                                    "5913747.32"
+                                ],
+                                "tns:roadId": [
+                                    "0"
+                                ],
+                                "tns:rp": [
+                                    "0.0"
+                                ],
+                                "tns:rs": [
+                                    "0"
+                                ],
+                                "tns:speedLimit": [
+                                    "0"
+                                ]
+                            }
+                        ],
+                        "tns:totalVolume": [
+                            "10.0"
+                        ]
+                    },
+                    {
+                        "tns:averageOccupancy": [
+                            "1.0"
+                        ],
+                        "tns:averageSpeed": [
+                            "37.33"
+                        ],
+                        "tns:carriagewaySegmentId": [
+                            "10635"
+                        ],
+                        "tns:defaultSpeed": [
+                            "50.0"
+                        ],
+                        "tns:endLocation": [
+                            {
+                                "tns:description": [
+                                    "2240"
+                                ],
+                                "tns:id": [
+                                    "16292"
+                                ],
+                                "tns:latitude": [
+                                    "-36.891632"
+                                ],
+                                "tns:longitude": [
+                                    "174.745911"
+                                ],
+                                "tns:nzmgEast": [
+                                    "0.0"
+                                ],
+                                "tns:nzmgNorth": [
+                                    "0.0"
+                                ],
+                                "tns:nztmEast": [
+                                    "1755571.58"
+                                ],
+                                "tns:nztmNorth": [
+                                    "5915725.88"
+                                ],
+                                "tns:roadId": [
+                                    "0"
+                                ],
+                                "tns:rp": [
+                                    "0.0"
+                                ],
+                                "tns:rs": [
+                                    "0"
+                                ],
+                                "tns:speedLimit": [
+                                    "0"
+                                ]
+                            }
+                        ],
+                        "tns:id": [
+                            "6902"
+                        ],
+                        "tns:lastReadingTime": [
+                            "2014-05-24T14:19:00.000+12:00"
+                        ],
+                        "tns:linkId": [
+                            "1187"
+                        ],
+                        "tns:linkSequence": [
+                            "1"
+                        ],
+                        "tns:reliability": [
+                            "0.0"
+                        ],
+                        "tns:sectionEnd": [
+                            "1368"
+                        ],
+                        "tns:sectionLength": [
+                            "1.484"
+                        ],
+                        "tns:sectionName": [
+                            "R04-NB 2146-2240"
+                        ],
+                        "tns:sectionOrder": [
+                            "0"
+                        ],
+                        "tns:sectionStart": [
+                            "1339"
+                        ],
+                        "tns:sectionTime": [
+                            "2.39"
+                        ],
+                        "tns:segmentType": [
+                            {
+                                "tns:groupType": [
+                                    "J"
+                                ],
+                                "tns:id": [
+                                    "5"
+                                ],
+                                "tns:name": [
+                                    "Arterials"
+                                ]
+                            }
+                        ],
+                        "tns:startLocation": [
+                            {
+                                "tns:description": [
+                                    "2146"
+                                ],
+                                "tns:id": [
+                                    "16274"
+                                ],
+                                "tns:latitude": [
+                                    "-36.904613"
+                                ],
+                                "tns:longitude": [
+                                    "174.741745"
+                                ],
+                                "tns:nzmgEast": [
+                                    "0.0"
+                                ],
+                                "tns:nzmgNorth": [
+                                    "0.0"
+                                ],
+                                "tns:nztmEast": [
+                                    "1755169.34"
+                                ],
+                                "tns:nztmNorth": [
+                                    "5914293.62"
+                                ],
+                                "tns:roadId": [
+                                    "0"
+                                ],
+                                "tns:rp": [
+                                    "0.0"
+                                ],
+                                "tns:rs": [
+                                    "0"
+                                ],
+                                "tns:speedLimit": [
+                                    "0"
+                                ]
+                            }
+                        ],
+                        "tns:totalVolume": [
+                            "10.0"
+                        ]
+                    },
+                    {
+                        "tns:averageOccupancy": [
+                            "1.0"
+                        ],
+                        "tns:averageSpeed": [
+                            "30.13"
+                        ],
+                        "tns:carriagewaySegmentId": [
+                            "10636"
+                        ],
+                        "tns:defaultSpeed": [
+                            "50.0"
+                        ],
+                        "tns:endLocation": [
+                            {
+                                "tns:description": [
+                                    "2209"
+                                ],
+                                "tns:id": [
+                                    "16293"
+                                ],
+                                "tns:latitude": [
+                                    "-36.888657"
+                                ],
+                                "tns:longitude": [
+                                    "174.746872"
+                                ],
+                                "tns:nzmgEast": [
+                                    "0.0"
+                                ],
+                                "tns:nzmgNorth": [
+                                    "0.0"
+                                ],
+                                "tns:nztmEast": [
+                                    "1755672.73"
+                                ],
+                                "tns:nztmNorth": [
+                                    "5916087.64"
+                                ],
+                                "tns:roadId": [
+                                    "0"
+                                ],
+                                "tns:rp": [
+                                    "0.0"
+                                ],
+                                "tns:rs": [
+                                    "0"
+                                ],
+                                "tns:speedLimit": [
+                                    "0"
+                                ]
+                            }
+                        ],
+                        "tns:id": [
+                            "6903"
+                        ],
+                        "tns:lastReadingTime": [
+                            "2014-05-24T14:19:00.000+12:00"
+                        ],
+                        "tns:linkId": [
+                            "1187"
+                        ],
+                        "tns:linkSequence": [
+                            "2"
+                        ],
+                        "tns:reliability": [
+                            "0.0"
+                        ],
+                        "tns:sectionEnd": [
+                            "1374"
+                        ],
+                        "tns:sectionLength": [
+                            "0.345"
+                        ],
+                        "tns:sectionName": [
+                            "R04-NB 2240-2209"
+                        ],
+                        "tns:sectionOrder": [
+                            "0"
+                        ],
+                        "tns:sectionStart": [
+                            "1368"
+                        ],
+                        "tns:sectionTime": [
+                            "0.69"
+                        ],
+                        "tns:segmentType": [
+                            {
+                                "tns:groupType": [
+                                    "J"
+                                ],
+                                "tns:id": [
+                                    "5"
+                                ],
+                                "tns:name": [
+                                    "Arterials"
+                                ]
+                            }
+                        ],
+                        "tns:startLocation": [
+                            {
+                                "tns:description": [
+                                    "2240"
+                                ],
+                                "tns:id": [
+                                    "16275"
+                                ],
+                                "tns:latitude": [
+                                    "-36.891632"
+                                ],
+                                "tns:longitude": [
+                                    "174.745911"
+                                ],
+                                "tns:nzmgEast": [
+                                    "0.0"
+                                ],
+                                "tns:nzmgNorth": [
+                                    "0.0"
+                                ],
+                                "tns:nztmEast": [
+                                    "1755571.58"
+                                ],
+                                "tns:nztmNorth": [
+                                    "5915725.88"
+                                ],
+                                "tns:roadId": [
+                                    "0"
+                                ],
+                                "tns:rp": [
+                                    "0.0"
+                                ],
+                                "tns:rs": [
+                                    "0"
+                                ],
+                                "tns:speedLimit": [
+                                    "0"
+                                ]
+                            }
+                        ],
+                        "tns:totalVolume": [
+                            "9.0"
+                        ]
+                    },
+                    {
+                        "tns:averageOccupancy": [
+                            "1.0"
+                        ],
+                        "tns:averageSpeed": [
+                            "30.13"
+                        ],
+                        "tns:carriagewaySegmentId": [
+                            "10637"
+                        ],
+                        "tns:defaultSpeed": [
+                            "50.0"
+                        ],
+                        "tns:endLocation": [
+                            {
+                                "tns:description": [
+                                    "2201"
+                                ],
+                                "tns:id": [
+                                    "16294"
+                                ],
+                                "tns:latitude": [
+                                    "-36.887074"
+                                ],
+                                "tns:longitude": [
+                                    "174.747437"
+                                ],
+                                "tns:nzmgEast": [
+                                    "0.0"
+                                ],
+                                "tns:nzmgNorth": [
+                                    "0.0"
+                                ],
+                                "tns:nztmEast": [
+                                    "1755711.99"
+                                ],
+                                "tns:nztmNorth": [
+                                    "5916230.64"
+                                ],
+                                "tns:roadId": [
+                                    "0"
+                                ],
+                                "tns:rp": [
+                                    "0.0"
+                                ],
+                                "tns:rs": [
+                                    "0"
+                                ],
+                                "tns:speedLimit": [
+                                    "0"
+                                ]
+                            }
+                        ],
+                        "tns:id": [
+                            "6904"
+                        ],
+                        "tns:lastReadingTime": [
+                            "2014-05-24T14:19:00.000+12:00"
+                        ],
+                        "tns:linkId": [
+                            "1187"
+                        ],
+                        "tns:linkSequence": [
+                            "3"
+                        ],
+                        "tns:reliability": [
+                            "0.0"
+                        ],
+                        "tns:sectionEnd": [
+                            "1311"
+                        ],
+                        "tns:sectionLength": [
+                            "0.183"
+                        ],
+                        "tns:sectionName": [
+                            "R04-NB 2209-2201"
+                        ],
+                        "tns:sectionOrder": [
+                            "0"
+                        ],
+                        "tns:sectionStart": [
+                            "1374"
+                        ],
+                        "tns:sectionTime": [
+                            "0.36"
+                        ],
+                        "tns:segmentType": [
+                            {
+                                "tns:groupType": [
+                                    "J"
+                                ],
+                                "tns:id": [
+                                    "5"
+                                ],
+                                "tns:name": [
+                                    "Arterials"
+                                ]
+                            }
+                        ],
+                        "tns:startLocation": [
+                            {
+                                "tns:description": [
+                                    "2209"
+                                ],
+                                "tns:id": [
+                                    "16276"
+                                ],
+                                "tns:latitude": [
+                                    "-36.888657"
+                                ],
+                                "tns:longitude": [
+                                    "174.746872"
+                                ],
+                                "tns:nzmgEast": [
+                                    "0.0"
+                                ],
+                                "tns:nzmgNorth": [
+                                    "0.0"
+                                ],
+                                "tns:nztmEast": [
+                                    "1755663.49"
+                                ],
+                                "tns:nztmNorth": [
+                                    "5916054.61"
+                                ],
+                                "tns:roadId": [
+                                    "0"
+                                ],
+                                "tns:rp": [
+                                    "0.0"
+                                ],
+                                "tns:rs": [
+                                    "0"
+                                ],
+                                "tns:speedLimit": [
+                                    "0"
+                                ]
+                            }
+                        ],
+                        "tns:totalVolume": [
+                            "9.0"
+                        ]
+                    },
+                    {
+                        "tns:averageOccupancy": [
+                            "1.0"
+                        ],
+                        "tns:averageSpeed": [
+                            "35.34"
+                        ],
+                        "tns:carriagewaySegmentId": [
+                            "10638"
+                        ],
+                        "tns:defaultSpeed": [
+                            "50.0"
+                        ],
+                        "tns:endLocation": [
+                            {
+                                "tns:description": [
+                                    "2138"
+                                ],
+                                "tns:id": [
+                                    "16295"
+                                ],
+                                "tns:latitude": [
+                                    "-36.87598"
+                                ],
+                                "tns:longitude": [
+                                    "174.750992"
+                                ],
+                                "tns:nzmgEast": [
+                                    "0.0"
+                                ],
+                                "tns:nzmgNorth": [
+                                    "0.0"
+                                ],
+                                "tns:nztmEast": [
+                                    "1756055.25"
+                                ],
+                                "tns:nztmNorth": [
+                                    "5917454.29"
+                                ],
+                                "tns:roadId": [
+                                    "0"
+                                ],
+                                "tns:rp": [
+                                    "0.0"
+                                ],
+                                "tns:rs": [
+                                    "0"
+                                ],
+                                "tns:speedLimit": [
+                                    "0"
+                                ]
+                            }
+                        ],
+                        "tns:id": [
+                            "6905"
+                        ],
+                        "tns:lastReadingTime": [
+                            "2014-05-24T14:19:00.000+12:00"
+                        ],
+                        "tns:linkId": [
+                            "1188"
+                        ],
+                        "tns:linkSequence": [
+                            "1"
+                        ],
+                        "tns:reliability": [
+                            "0.0"
+                        ],
+                        "tns:sectionEnd": [
+                            "1393"
+                        ],
+                        "tns:sectionLength": [
+                            "1.27"
+                        ],
+                        "tns:sectionName": [
+                            "R04-NB 2201-2138"
+                        ],
+                        "tns:sectionOrder": [
+                            "0"
+                        ],
+                        "tns:sectionStart": [
+                            "1311"
+                        ],
+                        "tns:sectionTime": [
+                            "2.16"
+                        ],
+                        "tns:segmentType": [
+                            {
+                                "tns:groupType": [
+                                    "J"
+                                ],
+                                "tns:id": [
+                                    "5"
+                                ],
+                                "tns:name": [
+                                    "Arterials"
+                                ]
+                            }
+                        ],
+                        "tns:startLocation": [
+                            {
+                                "tns:description": [
+                                    "2201"
+                                ],
+                                "tns:id": [
+                                    "16277"
+                                ],
+                                "tns:latitude": [
+                                    "-36.887073"
+                                ],
+                                "tns:longitude": [
+                                    "174.747437"
+                                ],
+                                "tns:nzmgEast": [
+                                    "0.0"
+                                ],
+                                "tns:nzmgNorth": [
+                                    "0.0"
+                                ],
+                                "tns:nztmEast": [
+                                    "1755711.99"
+                                ],
+                                "tns:nztmNorth": [
+                                    "5916230.64"
+                                ],
+                                "tns:roadId": [
+                                    "0"
+                                ],
+                                "tns:rp": [
+                                    "0.0"
+                                ],
+                                "tns:rs": [
+                                    "0"
+                                ],
+                                "tns:speedLimit": [
+                                    "0"
+                                ]
+                            }
+                        ],
+                        "tns:totalVolume": [
+                            "10.0"
+                        ]
+                    },
+                    {
+                        "tns:averageOccupancy": [
+                            "1.0"
+                        ],
+                        "tns:averageSpeed": [
+                            "36.21"
+                        ],
+                        "tns:carriagewaySegmentId": [
+                            "10639"
+                        ],
+                        "tns:defaultSpeed": [
+                            "50.0"
+                        ],
+                        "tns:endLocation": [
+                            {
+                                "tns:description": [
+                                    "2141"
+                                ],
+                                "tns:id": [
+                                    "16296"
+                                ],
+                                "tns:latitude": [
+                                    "-36.872105"
+                                ],
+                                "tns:longitude": [
+                                    "174.752243"
+                                ],
+                                "tns:nzmgEast": [
+                                    "0.0"
+                                ],
+                                "tns:nzmgNorth": [
+                                    "0.0"
+                                ],
+                                "tns:nztmEast": [
+                                    "1756174.87"
+                                ],
+                                "tns:nztmNorth": [
+                                    "5917881.95"
+                                ],
+                                "tns:roadId": [
+                                    "0"
+                                ],
+                                "tns:rp": [
+                                    "0.0"
+                                ],
+                                "tns:rs": [
+                                    "0"
+                                ],
+                                "tns:speedLimit": [
+                                    "0"
+                                ]
+                            }
+                        ],
+                        "tns:id": [
+                            "6906"
+                        ],
+                        "tns:lastReadingTime": [
+                            "2014-05-24T14:19:00.000+12:00"
+                        ],
+                        "tns:linkId": [
+                            "1188"
+                        ],
+                        "tns:linkSequence": [
+                            "2"
+                        ],
+                        "tns:reliability": [
+                            "0.0"
+                        ],
+                        "tns:sectionEnd": [
+                            "1398"
+                        ],
+                        "tns:sectionLength": [
+                            "0.444"
+                        ],
+                        "tns:sectionName": [
+                            "R04-NB 2138-2141"
+                        ],
+                        "tns:sectionOrder": [
+                            "0"
+                        ],
+                        "tns:sectionStart": [
+                            "1393"
+                        ],
+                        "tns:sectionTime": [
+                            "0.74"
+                        ],
+                        "tns:segmentType": [
+                            {
+                                "tns:groupType": [
+                                    "J"
+                                ],
+                                "tns:id": [
+                                    "5"
+                                ],
+                                "tns:name": [
+                                    "Arterials"
+                                ]
+                            }
+                        ],
+                        "tns:startLocation": [
+                            {
+                                "tns:description": [
+                                    "2138"
+                                ],
+                                "tns:id": [
+                                    "16278"
+                                ],
+                                "tns:latitude": [
+                                    "-36.87598"
+                                ],
+                                "tns:longitude": [
+                                    "174.750992"
+                                ],
+                                "tns:nzmgEast": [
+                                    "0.0"
+                                ],
+                                "tns:nzmgNorth": [
+                                    "0.0"
+                                ],
+                                "tns:nztmEast": [
+                                    "1756055.25"
+                                ],
+                                "tns:nztmNorth": [
+                                    "5917454.29"
+                                ],
+                                "tns:roadId": [
+                                    "0"
+                                ],
+                                "tns:rp": [
+                                    "0.0"
+                                ],
+                                "tns:rs": [
+                                    "0"
+                                ],
+                                "tns:speedLimit": [
+                                    "0"
+                                ]
+                            }
+                        ],
+                        "tns:totalVolume": [
+                            "12.0"
+                        ]
+                    },
+                    {
+                        "tns:averageOccupancy": [
+                            "0.0"
+                        ],
+                        "tns:averageSpeed": [
+                            "36.21"
+                        ],
+                        "tns:carriagewaySegmentId": [
+                            "12005"
+                        ],
+                        "tns:defaultSpeed": [
+                            "50.0"
+                        ],
+                        "tns:endLocation": [
+                            {
+                                "tns:description": [
+                                    ""
+                                ],
+                                "tns:id": [
+                                    "20166"
+                                ],
+                                "tns:latitude": [
+                                    "-36.870136"
+                                ],
+                                "tns:longitude": [
+                                    "174.752899"
+                                ],
+                                "tns:nzmgEast": [
+                                    "0.0"
+                                ],
+                                "tns:nzmgNorth": [
+                                    "0.0"
+                                ],
+                                "tns:nztmEast": [
+                                    "1756238.0"
+                                ],
+                                "tns:nztmNorth": [
+                                    "5918099.5"
+                                ],
+                                "tns:roadId": [
+                                    "0"
+                                ],
+                                "tns:rp": [
+                                    "0.0"
+                                ],
+                                "tns:rs": [
+                                    "0"
+                                ],
+                                "tns:speedLimit": [
+                                    "50"
+                                ]
+                            }
+                        ],
+                        "tns:id": [
+                            "8664"
+                        ],
+                        "tns:lastReadingTime": [
+                            "2014-05-24T14:19:00.000+12:00"
+                        ],
+                        "tns:linkId": [
+                            "1188"
+                        ],
+                        "tns:linkSequence": [
+                            "3"
+                        ],
+                        "tns:reliability": [
+                            "0.0"
+                        ],
+                        "tns:sectionEnd": [
+                            "2148"
+                        ],
+                        "tns:sectionLength": [
+                            "0.23"
+                        ],
+                        "tns:sectionName": [
+                            "R04-NB Dominion Road"
+                        ],
+                        "tns:sectionOrder": [
+                            "0"
+                        ],
+                        "tns:sectionStart": [
+                            "1398"
+                        ],
+                        "tns:sectionTime": [
+                            "0.38"
+                        ],
+                        "tns:segmentType": [
+                            {
+                                "tns:groupType": [
+                                    "J"
+                                ],
+                                "tns:id": [
+                                    "5"
+                                ],
+                                "tns:name": [
+                                    "Arterials"
+                                ]
+                            }
+                        ],
+                        "tns:startLocation": [
+                            {
+                                "tns:description": [
+                                    ""
+                                ],
+                                "tns:id": [
+                                    "19933"
+                                ],
+                                "tns:latitude": [
+                                    "-36.872105"
+                                ],
+                                "tns:longitude": [
+                                    "174.752243"
+                                ],
+                                "tns:nzmgEast": [
+                                    "0.0"
+                                ],
+                                "tns:nzmgNorth": [
+                                    "0.0"
+                                ],
+                                "tns:nztmEast": [
+                                    "1756174.87"
+                                ],
+                                "tns:nztmNorth": [
+                                    "5917882.0"
+                                ],
+                                "tns:roadId": [
+                                    "0"
+                                ],
+                                "tns:rp": [
+                                    "0.0"
+                                ],
+                                "tns:rs": [
+                                    "0"
+                                ],
+                                "tns:speedLimit": [
+                                    "50"
+                                ]
+                            }
+                        ],
+                        "tns:totalVolume": [
+                            "0.0"
+                        ]
+                    },
+                    {
+                        "tns:averageOccupancy": [
+                            "0.0"
+                        ],
+                        "tns:averageSpeed": [
+                            "36.21"
+                        ],
+                        "tns:carriagewaySegmentId": [
+                            "12006"
+                        ],
+                        "tns:defaultSpeed": [
+                            "50.0"
+                        ],
+                        "tns:endLocation": [
+                            {
+                                "tns:description": [
+                                    ""
+                                ],
+                                "tns:id": [
+                                    "20177"
+                                ],
+                                "tns:latitude": [
+                                    "-36.867412"
+                                ],
+                                "tns:longitude": [
+                                    "174.753845"
+                                ],
+                                "tns:nzmgEast": [
+                                    "0.0"
+                                ],
+                                "tns:nzmgNorth": [
+                                    "0.0"
+                                ],
+                                "tns:nztmEast": [
+                                    "1756327.5"
+                                ],
+                                "tns:nztmNorth": [
+                                    "5918400.0"
+                                ],
+                                "tns:roadId": [
+                                    "0"
+                                ],
+                                "tns:rp": [
+                                    "0.0"
+                                ],
+                                "tns:rs": [
+                                    "0"
+                                ],
+                                "tns:speedLimit": [
+                                    "50"
+                                ]
+                            }
+                        ],
+                        "tns:id": [
+                            "8751"
+                        ],
+                        "tns:lastReadingTime": [
+                            "2014-05-24T14:19:00.000+12:00"
+                        ],
+                        "tns:linkId": [
+                            "1561"
+                        ],
+                        "tns:linkSequence": [
+                            "1"
+                        ],
+                        "tns:reliability": [
+                            "0.0"
+                        ],
+                        "tns:sectionEnd": [
+                            "2149"
+                        ],
+                        "tns:sectionLength": [
+                            "0.31"
+                        ],
+                        "tns:sectionName": [
+                            "R04-NB - Dominion Road Charles Street to Haslett Street"
+                        ],
+                        "tns:sectionOrder": [
+                            "0"
+                        ],
+                        "tns:sectionStart": [
+                            "2148"
+                        ],
+                        "tns:sectionTime": [
+                            "0.51"
+                        ],
+                        "tns:segmentType": [
+                            {
+                                "tns:groupType": [
+                                    "J"
+                                ],
+                                "tns:id": [
+                                    "5"
+                                ],
+                                "tns:name": [
+                                    "Arterials"
+                                ]
+                            }
+                        ],
+                        "tns:startLocation": [
+                            {
+                                "tns:description": [
+                                    ""
+                                ],
+                                "tns:id": [
+                                    "19935"
+                                ],
+                                "tns:latitude": [
+                                    "-36.870136"
+                                ],
+                                "tns:longitude": [
+                                    "174.752899"
+                                ],
+                                "tns:nzmgEast": [
+                                    "0.0"
+                                ],
+                                "tns:nzmgNorth": [
+                                    "0.0"
+                                ],
+                                "tns:nztmEast": [
+                                    "1756238.0"
+                                ],
+                                "tns:nztmNorth": [
+                                    "5918099.5"
+                                ],
+                                "tns:roadId": [
+                                    "0"
+                                ],
+                                "tns:rp": [
+                                    "0.0"
+                                ],
+                                "tns:rs": [
+                                    "0"
+                                ],
+                                "tns:speedLimit": [
+                                    "50"
+                                ]
+                            }
+                        ],
+                        "tns:totalVolume": [
+                            "0.0"
+                        ]
+                    },
+                    {
+                        "tns:averageOccupancy": [
+                            "0.0"
+                        ],
+                        "tns:averageSpeed": [
+                            "36.21"
+                        ],
+                        "tns:carriagewaySegmentId": [
+                            "12007"
+                        ],
+                        "tns:defaultSpeed": [
+                            "50.0"
+                        ],
+                        "tns:endLocation": [
+                            {
+                                "tns:description": [
+                                    ""
+                                ],
+                                "tns:id": [
+                                    "20183"
+                                ],
+                                "tns:latitude": [
+                                    "-36.864361"
+                                ],
+                                "tns:longitude": [
+                                    "174.754745"
+                                ],
+                                "tns:nzmgEast": [
+                                    "0.0"
+                                ],
+                                "tns:nzmgNorth": [
+                                    "0.0"
+                                ],
+                                "tns:nztmEast": [
+                                    "1756414.5"
+                                ],
+                                "tns:nztmNorth": [
+                                    "5918737.5"
+                                ],
+                                "tns:roadId": [
+                                    "0"
+                                ],
+                                "tns:rp": [
+                                    "0.0"
+                                ],
+                                "tns:rs": [
+                                    "0"
+                                ],
+                                "tns:speedLimit": [
+                                    "50"
+                                ]
+                            }
+                        ],
+                        "tns:id": [
+                            "8836"
+                        ],
+                        "tns:lastReadingTime": [
+                            "2014-05-24T14:19:00.000+12:00"
+                        ],
+                        "tns:linkId": [
+                            "1562"
+                        ],
+                        "tns:linkSequence": [
+                            "1"
+                        ],
+                        "tns:reliability": [
+                            "0.0"
+                        ],
+                        "tns:sectionEnd": [
+                            "1404"
+                        ],
+                        "tns:sectionLength": [
+                            "0.35"
+                        ],
+                        "tns:sectionName": [
+                            "R04-NB Ian Mackinnon Drive"
+                        ],
+                        "tns:sectionOrder": [
+                            "0"
+                        ],
+                        "tns:sectionStart": [
+                            "2149"
+                        ],
+                        "tns:sectionTime": [
+                            "0.58"
+                        ],
+                        "tns:segmentType": [
+                            {
+                                "tns:groupType": [
+                                    "J"
+                                ],
+                                "tns:id": [
+                                    "5"
+                                ],
+                                "tns:name": [
+                                    "Arterials"
+                                ]
+                            }
+                        ],
+                        "tns:startLocation": [
+                            {
+                                "tns:description": [
+                                    ""
+                                ],
+                                "tns:id": [
+                                    "19947"
+                                ],
+                                "tns:latitude": [
+                                    "-36.867412"
+                                ],
+                                "tns:longitude": [
+                                    "174.753845"
+                                ],
+                                "tns:nzmgEast": [
+                                    "0.0"
+                                ],
+                                "tns:nzmgNorth": [
+                                    "0.0"
+                                ],
+                                "tns:nztmEast": [
+                                    "1756327.5"
+                                ],
+                                "tns:nztmNorth": [
+                                    "5918400.0"
+                                ],
+                                "tns:roadId": [
+                                    "0"
+                                ],
+                                "tns:rp": [
+                                    "0.0"
+                                ],
+                                "tns:rs": [
+                                    "0"
+                                ],
+                                "tns:speedLimit": [
+                                    "50"
+                                ]
+                            }
+                        ],
+                        "tns:totalVolume": [
+                            "0.0"
+                        ]
+                    },
+                    {
+                        "tns:averageOccupancy": [
+                            "0.0"
+                        ],
+                        "tns:averageSpeed": [
+                            "46.11"
+                        ],
+                        "tns:carriagewaySegmentId": [
+                            "10422"
+                        ],
+                        "tns:defaultSpeed": [
+                            "60.0"
+                        ],
+                        "tns:endLocation": [
+                            {
+                                "tns:description": [
+                                    "2075"
+                                ],
+                                "tns:id": [
+                                    "16298"
+                                ],
+                                "tns:latitude": [
+                                    "-36.860554"
+                                ],
+                                "tns:longitude": [
+                                    "174.760178"
+                                ],
+                                "tns:nzmgEast": [
+                                    "0.0"
+                                ],
+                                "tns:nzmgNorth": [
+                                    "0.0"
+                                ],
+                                "tns:nztmEast": [
+                                    "1756887.82"
+                                ],
+                                "tns:nztmNorth": [
+                                    "5919155.17"
+                                ],
+                                "tns:roadId": [
+                                    "0"
+                                ],
+                                "tns:rp": [
+                                    "0.0"
+                                ],
+                                "tns:rs": [
+                                    "0"
+                                ],
+                                "tns:speedLimit": [
+                                    "0"
+                                ]
+                            }
+                        ],
+                        "tns:id": [
+                            "6892"
+                        ],
+                        "tns:lastReadingTime": [
+                            "2014-05-24T14:19:00.000+12:00"
+                        ],
+                        "tns:linkId": [
+                            "1562"
+                        ],
+                        "tns:linkSequence": [
+                            "2"
+                        ],
+                        "tns:reliability": [
+                            "0.0"
+                        ],
+                        "tns:sectionEnd": [
+                            "1280"
+                        ],
+                        "tns:sectionLength": [
+                            "0.697"
+                        ],
+                        "tns:sectionName": [
+                            "R04-NB 2327-2075"
+                        ],
+                        "tns:sectionOrder": [
+                            "0"
+                        ],
+                        "tns:sectionStart": [
+                            "1404"
+                        ],
+                        "tns:sectionTime": [
+                            "0.91"
+                        ],
+                        "tns:segmentType": [
+                            {
+                                "tns:groupType": [
+                                    "J"
+                                ],
+                                "tns:id": [
+                                    "5"
+                                ],
+                                "tns:name": [
+                                    "Arterials"
+                                ]
+                            }
+                        ],
+                        "tns:startLocation": [
+                            {
+                                "tns:description": [
+                                    "2327"
+                                ],
+                                "tns:id": [
+                                    "16280"
+                                ],
+                                "tns:latitude": [
+                                    "-36.864361"
+                                ],
+                                "tns:longitude": [
+                                    "174.754745"
+                                ],
+                                "tns:nzmgEast": [
+                                    "0.0"
+                                ],
+                                "tns:nzmgNorth": [
+                                    "0.0"
+                                ],
+                                "tns:nztmEast": [
+                                    "1756414.47"
+                                ],
+                                "tns:nztmNorth": [
+                                    "5918737.37"
+                                ],
+                                "tns:roadId": [
+                                    "0"
+                                ],
+                                "tns:rp": [
+                                    "0.0"
+                                ],
+                                "tns:rs": [
+                                    "0"
+                                ],
+                                "tns:speedLimit": [
+                                    "0"
+                                ]
+                            }
+                        ],
+                        "tns:totalVolume": [
+                            "0.0"
+                        ]
+                    }
+                ],
+                "tns:sensitivity": [
+                    "0.5"
+                ],
+                "tns:start": [
+                    "R04-NB - Dominion Rd"
+                ],
+                "tns:thresholdValue": [
+                    "99"
+                ],
+                "tns:totalLength": [
+                    "6.031"
+                ],
+                "tns:type": [
+                    {
+                        "tns:groupType": [
+                            "J"
+                        ],
+                        "tns:id": [
+                            "12"
+                        ],
+                        "tns:name": [
+                            "Auckland Transport"
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

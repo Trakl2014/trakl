@@ -1,0 +1,146 @@
+﻿/*
+*	STYLES FOR: complex.html
+*
+*	Created with ThemeRoller...
+*	http://ui.jquery.com/themeroller/?bgColorDefault=e0e0e0&bgTextureDefault=02_glass.png&bgImgOpacityDefault=80&borderColorDefault=cccccc&fcDefault=444444&iconColorDefault=888888&bgColorHover=d8d8d8&bgTextureHover=02_glass.png&bgImgOpacityHover=90&borderColorHover=888888&fcHover=111111&iconColorHover=222222&bgColorActive=8ab9ff&bgTextureActive=02_glass.png&bgImgOpacityActive=50&borderColorActive=2694e8&fcActive=000000&iconColorActive=ffffff&bgColorContent=f3f3f3&fcContent=362b36&ffDefault=Lucida%20Grande,%20Lucida%20Sans,%20Arial,%20sans-serif&fwDefault=normal&fsDefault=1.2&fsDefaultUnit=em#bgColorDefault=d6d6d6&bgTextureDefault=02_glass.png&bgImgOpacityDefault=80&borderColorDefault=bbbbbb&fcDefault=000000&iconColorDefault=444444&bgColorHover=eeeeee&bgTextureHover=02_glass.png&bgImgOpacityHover=90&borderColorHover=cccccc&fcHover=000066&iconColorHover=000066&bgColorActive=80ade5&bgTextureActive=04_highlight_hard.png&bgImgOpacityActive=100&borderColorActive=266cc0&fcActive=000000&iconColorActive=ffffff&bgColorContent=D1E6FC&bgTextureContent=10_dots_medium.png&bgImgOpacityContent=90&borderColorContent=bbbbbb&fcContent=000000&iconColorContent=222222&ffDefault=Lucida+Grande%2C+Lucida+Sans%2C+Arial%2C+sans-serif&fwDefault=normal&fsDefault=1&fsDefaultUnit=em
+*/
+
+/*
+*	GENERAL COSMETICS
+*/
+
+
+/*
+*	COMMON LAYOUT PANE FORMATTING
+*/
+.pane ,				/* outer pane class */
+.ui-layout-pane {	/* inner pane class */
+	background-color: #FFF;
+	/*overflow: auto; /* will be auto-set to 'hidden' for any pane with a 'scrolling content div' */
+}
+
+
+/*
+*	OUTER-LAYOUT PANE FORMATTING
+*/
+.pane-north ,
+.pane-south ,
+.pane-west ,
+.pane-east {
+	overflow:		hidden;
+}
+
+
+/*
+*	OUTER LAYOUT RESIZERS & TOGGLERS
+*/
+.resizer-west-open ,
+.resizer-east-open {
+	background-color: #999;
+	opacity: 0.1;
+	filter: alpha(opacity=10);
+}
+.resizer-west-open:hover ,
+.resizer-east-open:hover {
+	/*opacity: 1;
+	filter: alpha(opacity=100);*/
+}
+.resizer-dragging {
+	/* see draggable.opacity option
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+	*/
+}
+.resizer-dragging-limit	{ background: #FF3300 !important; }
+
+/* IE6 * HACK - always show resizer graphics because IE6 cannot understand elem:hover */
+/** html .resizer-north , */
+* html .resizer-south ,
+* html .resizer-west-open ,
+* html .resizer-east-open {
+	opacity: 0.1 !important;
+	filter: alpha(opacity=10) !important;
+}
+
+/*
+*	SIMPLE TOGGLER BUTTONS (used on Outer Layout North/South only)
+*/
+
+.toggler-north-open ,
+.toggler-south-closed 		{ background: url(../images/toggle-up.gif) no-repeat center bottom; }
+.toggler-north-closed ,
+.toggler-south-open   		{ background: url(../images/toggle-dn.gif) no-repeat center top; }
+/*
+.toggler-east-closed ,
+.toggler-west-open    { background: url(../img/toggle-lt.gif) no-repeat center right; }
+.toggler-west-closed ,
+.toggler-east-open    { background: url(../img/toggle-rt.gif) no-repeat center left; }
+*/
+
+/*
+*	extJS-STYLE RESIZER/SLIDER-BAR (CLOSED)
+*/ 
+.resizer-west-closed ,
+.resizer-east-closed 
+{
+	background: url(../images/texture2.png) 0 0 repeat;
+	/*background: #D1E6FC url(../images/D1E6FC_40x100_textures_10_dots_medium_90.png) 0 0 repeat;*/
+	border-top: 1px solid #777;
+	border-bottom: 1px solid #777;
+}
+.resizer-west-closed:hover ,
+.resizer-east-closed:hover {
+	/*background: #D1E6FC;*/
+}
+
+/*
+ *	extJS-STYLE TOGGLE & PIN BUTTONS
+ *
+ *	these 'extra buttons' are INSIDE the east/west panes
+ */
+
+/* CUSTOM pin/close buttons */
+span.button-pin ,
+span.button-close {
+	width: 		20px;
+	height:		20px;
+	z-index:	2;
+	display:	block;
+	cursor: 	pointer;
+	margin-top: 5px;
+}
+span.button-close-west	{ left:	 0; }
+span.button-close-east	{ right: 0; }
+span.button-pin-west	{ right: 1px; }
+span.button-pin-east	{ left:	 1px; }
+
+/* CUSTOM pin-buttons */
+span.button-pin-up 		  		{ background: url(../images/pin-up-off.gif) no-repeat center; }
+span.button-pin-up:hover   		{ background: url(../images/pin-up-on.gif)  no-repeat center; }
+span.button-pin-down 	  		{ background: url(../images/pin.png) no-repeat center; }
+span.button-pin-down:hover 		{ background: url(../images/pin-dn-on.gif)  no-repeat center; }
+
+/* CUSTOM close-buttons */
+span.button-close-west			{ background: url(../images/go-lt-off.gif) no-repeat center; }
+span.button-close-west:hover	{ background: url(../images/go-lt-on.gif)  no-repeat center; }
+span.button-close-east			{ background: url(../images/double-arrow-right.png) no-repeat center; }
+span.button-close-east:hover	{ background: url(../images/go-rt-on.gif)  no-repeat center; }
+
+/* STANDARD toggler-buttons - when the east/west panes are 'closed' */
+.toggler-west-closed		{ background: url(../images/go-rt-off.gif) no-repeat center; }
+.toggler-west-closed:hover	{ background: url(../images/go-rt-on.gif)  no-repeat center; }
+.toggler-east-closed		{ background: url(../images/double-arrow-left.png) no-repeat center; }
+.toggler-east-closed:hover	{ background: url(../images/go-lt-on.gif)  no-repeat center; }
+
+.ui-layout-resizer {
+	BACKGROUND-color: #efefef; 
+	border-top:1px solid #ccc;
+	border-bottom:1px solid #ccc;
+	HEIGHT: 7px;
+	background-image:url(../images/seperator.png);
+	background-repeat:no-repeat; background-position: center;
+}
+
+
+
+
