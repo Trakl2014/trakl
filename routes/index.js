@@ -85,8 +85,17 @@ router.post('/', function(req, res) {
 
     });
 
-    console.log(res.locals.ok)
+    console.log(res.locals.ok);
 
+});
+
+router.get('/journeylist', function(req, res) {
+    var journeyList = require('./getfromTrafficAPI.js');
+    console.log('Calling traffic api');
+		journeyList.getJourneyList(function(data) {
+      console.log('got response from traffic api');
+      res.json(data);
+    });
 });
 
 module.exports = router;
