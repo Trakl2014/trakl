@@ -21,4 +21,13 @@ router.get('/submitted', function(req, res) {
     });
 });
 
+router.get('/journeylist', function(req, res) {
+	var journeyList = require('./getfromTrafficAPI.js');
+	res.render('journeylist', {
+		data: journeyList.getJourneyList('', function(data))
+	});
+});
+
+
+
 module.exports = router;
