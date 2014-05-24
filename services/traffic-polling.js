@@ -1,17 +1,19 @@
 var intervalHandle = null;
 var traffic = require('./journey-data');
 var TravelTime = require('../models/travel-time');
+var notification = require('../services/notification.js');
 var util = require('util');
 
+var TWO_MINUTES = 1000 * 60 * 2;
 var FIVE_MINUTES = 1000 * 60 * 5;
+
+var messageTemplate = 'Hi Lee, this is Esther. Your trip home will take XXXX minutes, and conditions are getting YYYY.';
 
 /*
  * Private methods
  */
 
-var saveTraffic = function(userId, trafficData) {
-
-    var trafficDetails = JSON.parse(trafficData);
+var saveTraffic = function(userId, trafficDetails) {
 
     var trafficStatus = {
         travelMinutes: trafficDetails.minutes,
@@ -31,6 +33,7 @@ var saveTraffic = function(userId, trafficData) {
 
 var updateTrafficData = function(journeys) {
 
+    var message = '';
     var journey = {};
 
     for(var i = 0; i < journeys.length; i++) {
@@ -39,7 +42,14 @@ var updateTrafficData = function(journeys) {
 
         traffic.getJourneyTraffic(journey.journeyRef, function(trafficData) {
             if(trafficData) {
-                saveTraffic(journey.userId, trafficData);
+                var trafficDetails = JSON.parse(trafficData);
+                var isImproving = trafficDetails.minutes < trafficDetails.lastMinutes;
+                var isBetter = isImproving ? 'better' : 'worse';
+                message = messageTemplate.replace('XXXX', trafficDetails.minutes);
+                message = message.replace('YYYY', isBetter);
+                console.log('Message: ' + message);
+                notification.notify(message);
+                saveTraffic(journey.userId, trafficDetails);
             } else {
                 console.log('No traffic data returned for ref: ' + journey.journeyRef);
             }
@@ -57,7 +67,7 @@ var activatePolling = function(storedJourneys) {
     // Update every 5 minutes
     setInterval(function() {
         updateTrafficData(storedJourneys);
-    }, FIVE_MINUTES);
+    }, TWO_MINUTES);
 
 };
 
