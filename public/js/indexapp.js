@@ -115,6 +115,10 @@ define([
                     TraklApp.State.get("headerview").open();
                 });
             }
+
+            if (TraklApp.State.get("openview")) {
+                TraklApp.State.get("openview").close();
+            }
             this.resetLayout();
 
             //this.verifyLogin(function () {
@@ -123,8 +127,7 @@ define([
                     TraklApp.Router.navigate("route", true);
                 }
                 else {
-                    if (actions.toLowerCase() == 'route')
-
+                    
                     var viewurl = TraklApp.Router.routeviews[actions.toLowerCase()];
 
                     if (viewurl) {

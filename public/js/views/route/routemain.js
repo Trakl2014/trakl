@@ -88,16 +88,18 @@ define([
         open: function () {
             document.title = "Route";
             this.model = new Model();
-            this.model.urlRoot = 'dominion_rd.json';
+            this.model.urlRoot = '/Api/travel-time';
 
-            this.model.fetch({success: this.render, 
-                error: function (a, b, c) {
+            this.model.fetch({
+                "data": $.param({ 'userId': 44 }),
+                'async': false
+            });
 
-                }
-            })
+            this.render();
+               
         },
         loadData: function(){
-            var data = this.model.toJSON();
+           
             this.renderRouteDDL();
             this.showConditions();
             
@@ -112,6 +114,15 @@ define([
 
             var data = model.toJSON();
             this.$('#ddlRoute').html(this.routeDdlTemplate(data));
+
+            //selected previously chosen journey
+            data = this.model.toJSON();
+
+            this.$('#ddlRoute option[value="AKL-SH1-NB-RNM"]').prop('selected', true)
+            this.$('#ddlRoute').trigger('change');
+
+
+            
 
         },
         loadMap: function () {
@@ -150,8 +161,26 @@ define([
             return new google.maps.LatLng(-36.836218, 174.762955);
         },
         ddlRouteChange: function (e) {
-            var that = this; 
+            var that = this;
 
+            var model = new Model();
+            model.urlRoot = 'Api/travel-time';
+
+            /*model.set({'userId': 44});
+            model.set({ 'journeyRef': this.$('#ddlRoute :selected').val() })
+            model.save({},{
+                'async': false
+            });
+
+
+            model.fetch({
+                "data": $.param({ 'userId': 44 }),
+                'async': false
+            });*/
+
+            var data = model.toJSON();
+
+            this.showConditions(data.isImproving, data.travelMinutes);
             var selectedOption = this.$('#ddlRoute :selected');
             var startLat = parseFloat(selectedOption.attr('data-start-lat'));
             var startLong = parseFloat(selectedOption.attr('data-start-long'));
@@ -173,7 +202,7 @@ define([
                 }
             });
         },
-        showConditions: function(){
+        showConditions: function(isImproving, minutes){
             this.$('.degrading-value').hide();
             this.$('.degrading-arrow').hide();
             this.$('.degrading-text').hide();
@@ -182,9 +211,20 @@ define([
             this.$('.improving-arrow').hide();
             this.$('.improving-text').hide();
 
-            this.$('.improving-value').show();
-            this.$('.improving-arrow').show();
-            this.$('.improving-text').show();
+            if (isImproving) {
+                this.$('.improving-value').show();
+                this.$('.improving-arrow').show();
+                this.$('.improving-text').show();
+                this.$('.improving-value .text-time').val(minutes? minutes : 0);
+                this.$('#leftPanel').css('background-color', '#d7f4d7');
+            }
+            else {
+                this.$('.degrading-value').show();
+                this.$('.degrading-arrow').show();
+                this.$('.degrading-text').show();
+                this.$('.degrading-value .text-time').val(minutes? minutes : 0);
+                this.$('#leftPanel').css('background-color', '#fecccc');
+            }
 
         },
         resize: function () {

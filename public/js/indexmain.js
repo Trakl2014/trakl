@@ -116,9 +116,12 @@ require(['indexapp'], function (app) {
 
     $.ajaxSetup({
         'beforeSend': function (xhr) {
-            if (TraklApp.State.get("tokenid")) {
-                xhr.setRequestHeader("app-auth-fetch-qualifier", TraklApp.State.get("tokenid"));
-            }
+            /////if (TraklApp.State.get("tokenid")) {
+                //xhr.setRequestHeader("app-auth-fetch-qualifier", TraklApp.State.get("tokenid"));
+                /*xhr.setRequestHeader("Access-Control-Allow-Origin", "http://trakl.herokuapp.com");
+                xhr.setRequestHeader("Access-Control-Allow-Methods", "GET,POST,PUT,DELETE,OPTIONS");
+                xhr.setRequestHeader("Access-Control-Allow-Headers", "Content-Type");*/
+           // }
         },
         cache: false
     });

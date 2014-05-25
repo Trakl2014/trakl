@@ -25,9 +25,10 @@ define([
         },
         render: function () {
             this.$el.html(this.template());
+            $.unblockUI();
         },
-        menuclick: function (li) {
-            var route = li.attr("data-route");
+        menuclick: function (e) {
+            var route = $(e.currentTarget).attr("data-route");
 
             if (route)
                 TraklApp.Router.navigate(route, true);
