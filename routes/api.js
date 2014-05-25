@@ -1,4 +1,5 @@
 var router = require('express').Router();
+var traffic = require('../services/journey-data');
 var TravelTime = require('../models/travel-time');
 var journeyData = require('../services/journey-data');
 
@@ -37,7 +38,27 @@ router.get('/travel-time', function(req, res) {
             res.statusCode = 500;
             return res.send(err);
         }
-        res.json(result);
+
+        console.log('Travel min: ' + result.travelMinutes);
+        console.log('User id: ' + result.userId);
+
+        if(!result.travelMinutes) {
+            traffic.getJourneyTraffic(result.journeyRef, function(trafficData) {
+                if(trafficData.substr(0, 28) !== 'The page cannot be displayed' ) {
+                    var response = result;
+                    var trafficDetails = JSON.parse(trafficData);
+                    var isImproving = trafficDetails.minutes < trafficDetails.lastMinutes;
+                    response.travelMinutes = trafficDetails.minutes;
+                    response.isImproving = isImproving;
+                    res.json(response);
+                } else {
+                    console.log('No traffic data returned for ref: ' + result.journeyRef);
+                }
+            });
+        } else {
+          res.json(result);
+        }
+
     });
 
 });
