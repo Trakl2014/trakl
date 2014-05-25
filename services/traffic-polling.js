@@ -20,9 +20,11 @@ var saveTraffic = function(userId, trafficDetails) {
         isImproving: trafficDetails.minutes < trafficDetails.lastMinutes
     };
 
-    var query = { userId: userId };
+    var query = {
+        userId: userId
+    };
     TravelTime.update(query, trafficStatus, function(err) {
-        if(err) {
+        if (err) {
             console.log('Error: ' + err.message);
         } else {
             console.log('Travel time updated for userId: ' + userId);
@@ -36,12 +38,12 @@ var updateTrafficData = function(journeys) {
     var message = '';
     var journey = {};
 
-    for(var i = 0; i < journeys.length; i++) {
+    for (var i = 0; i < journeys.length; i++) {
 
         journey = journeys[i];
 
         traffic.getJourneyTraffic(journey.journeyRef, function(trafficData) {
-            if(trafficData.substr(0, 28) !== 'The page cannot be displayed' ) {
+            if (trafficData.substr(0, 28) !== 'The page cannot be displayed') {
                 var trafficDetails = JSON.parse(trafficData);
                 var isImproving = trafficDetails.minutes < trafficDetails.lastMinutes;
                 var isBetter = isImproving ? 'better' : 'worse';
@@ -67,7 +69,7 @@ var activatePolling = function(storedJourneys) {
     // Update every 5 minutes
     setInterval(function() {
         updateTrafficData(storedJourneys);
-    }, TWO_MINUTES);
+    }, FIVE_MINUTES);
 
 };
 
@@ -82,7 +84,7 @@ var trafficPolling = {
 
         var journeys;
         TravelTime.find({}, function(err, storedJourneys) {
-            if(!err && storedJourneys) {
+            if (!err && storedJourneys) {
                 activatePolling(storedJourneys);
             }
         });
