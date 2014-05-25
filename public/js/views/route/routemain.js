@@ -96,13 +96,13 @@ define([
             });
 
             this.render();
-               
+
         },
         loadData: function(){
-           
+
             this.renderRouteDDL();
             this.showConditions();
-            
+
         },
         renderRouteDDL: function(){
             var model = new Model();
@@ -122,7 +122,7 @@ define([
             this.$('#ddlRoute').trigger('change');
 
 
-            
+
 
         },
         loadMap: function () {
@@ -198,7 +198,7 @@ define([
             this.gDir.route(request, function (result, status) {
                 if (status == google.maps.DirectionsStatus.OK) {
                     that.directionsDisplay.setDirections(result);
-                    this.map.fitBounds(result.routes[0].bounds);
+                    that.map.fitBounds(result.routes[0].bounds);
                 }
             });
         },
@@ -239,7 +239,7 @@ define([
             this.$('#map').width(this.$('.ui-layout-center').width());
             this.$('#map').height(this.$('.ui-layout-center').height());
             this.$('.degrading-value').height(this.$('.degrading-arrow').height() + this.$('.degrading-text').height() + 20);
-            
+
         },
         close: function () {
             this.$el.unbind();
