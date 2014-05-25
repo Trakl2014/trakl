@@ -1,0 +1,23 @@
+<ons-page class="center">
+	<ons-scroller>
+		<div class="page-padding mainDisplay dontgo" ng-class="{gohome: sampleResponse.isImproving}" ng-controller="dataCtrl">
+			<p>to:</p>
+			<h1>Home</h1>
+			
+			<!-- 	<div class="pieContainer">
+			<div class="pieBackground"></div>
+			     <div id="pieSlice1" class="hold"><div class="pie"></div></div>
+			</div> -->
+			<div class="travelTime">{{sampleResponse.travelMinutes}}</div>
+			<div class="trendIndicator" ></div>
+
+			<!-- <p>{{sampleResponse.userId}}</p> -->
+
+			<!-- <h2>Navigator</h2>
+			<ons-button ng-click="ons.$get('#main-navigator').pushPage('page3.html', { title: 'Page 3' })">
+				Push Page 3
+			</ons-button> -->
+
+		</div>		
+	</ons-scroller>	
+</ons-page>
