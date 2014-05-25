@@ -9,67 +9,67 @@
 /* icons */
 .close
 {
-	background-image:url(../Images/icon-close.png);
+	background-image:url(../images/icon-close.png);
 }
 .add
 {
-	background-image:url(../Images/icon-add.png);
+	background-image:url(../images/icon-add.png);
 }
 .nav-down-arrow
 {
-	background-image:url(../Images/nav-down-arrow.png);
+	background-image:url(../images/nav-down-arrow.png);
 }
 .nav-right-arrow
 {
-	background-image:url(../Images/nav-right-arrow.png);
+	background-image:url(../images/nav-right-arrow.png);
 }
 .icon-add
 {
-	background-image:url(../Images/icon-add.png);
+	background-image:url(../images/icon-add.png);
 }
 .icon-save
 {
-	background-image:url(../Images/icon-save.png);
+	background-image:url(../images/icon-save.png);
 }
 .icon-search
 {
-	background-image:url(../Images/icon-search.png);
+	background-image:url(../images/icon-search.png);
 }
 .icon-username
 {
-	background-image:url(../Images/icon-username.png);
+	background-image:url(../images/icon-username.png);
 }
 .icon-password
 {
-	background-image:url(../Images/icon-password.png);
+	background-image:url(../images/icon-password.png);
 }
 .icon-map-pin
 {
-	background-image:url(../Images/icon-map-pin.png);
+	background-image:url(../images/icon-map-pin.png);
 }
 .refresh-24x24
 {
-	background-image:url(../Images/refresh-24x24.png);
+	background-image:url(../images/refresh-24x24.png);
 }
 .edit-24x24
 {
-	background-image:url(../Images/edit-24x24.png);
+	background-image:url(../images/edit-24x24.png);
 }
 .save-24x24
 {
-	background-image:url(../Images/save-24x24.png);
+	background-image:url(../images/save-24x24.png);
 }
 .copy-24x24
 {
-	background-image:url(../Images/copy-24x24.png);
+	background-image:url(../images/copy-24x24.png);
 }
 .add-24x24
 {
-	background-image:url(../Images/add-24x24.png);
+	background-image:url(../images/add-24x24.png);
 }
 .down-arrow
 {
-	background-image:url(../Images/down-arrow.png);
+	background-image:url(../images/down-arrow.png);
 }
 
 .float-left
@@ -204,28 +204,28 @@
 	color:#000;
 }
 .ffp-blue
-{	
+{
 	background-color:#0066FF;
 }
 .ffp-silver
-{	
+{
 	background-color:#ddd;
 }
 .ffp-gold
-{	
+{
 	background-color:gold;
 }
 .ffp-platinum
-{	
+{
 	background-color:#666666;
 }
 .ffp-io
-{	
+{
 	background-color:#FF0000;
 }
 .green-led
 {
-	background-image:url(../Images/green-led.png);
+	background-image:url(../images/green-led.png);
 	background-position:center; background-repeat:no-repeat;
 	height:24px; width:24px;
 }

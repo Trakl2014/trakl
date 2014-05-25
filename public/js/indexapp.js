@@ -27,7 +27,7 @@ define([
         routes: {
             "*actions": "defaultRoute" //default
         },
-        // and the function that parses the query string can be something like : 
+        // and the function that parses the query string can be something like :
         parseQueryString: function (queryString) {
             var params = {};
             if (queryString) {
@@ -80,7 +80,7 @@ define([
                 if (!TraklApp.State.get("headerview")) {
                     require(['views/header'], function (HeaderView) {
                         TraklApp.State.set({ "headerview": new HeaderView() });
-                        
+
 
                         if (typeof callbackFunction == 'function') {
                             TraklApp.State.get("headerview").open(callbackFunction);
@@ -122,12 +122,12 @@ define([
             this.resetLayout();
 
             //this.verifyLogin(function () {
-                $.blockUI({ message: '<h3><img src="assets/Images/ajax-loader.gif" />' + " " + l('%app.loading') + '</h3>' });
+                $.blockUI({ message: '<h3><img src="assets/images/ajax-loader.gif" />' + " " + l('%app.loading') + '</h3>' });
                 if (actions == "" || actions == null) {
                     TraklApp.Router.navigate("route", true);
                 }
                 else {
-                    
+
                     var viewurl = TraklApp.Router.routeviews[actions.toLowerCase()];
 
                     if (viewurl) {
@@ -162,13 +162,13 @@ define([
                 $('<link type="text/css" rel="stylesheet" href="assets/css/jquery.layout.css"/>').appendTo("head");
             }
         },
-      
+
         initialize: function () {
             String.locale = 'en-GB';
 
             jQuery.timeago.settings.allowFuture = true;
             jQuery.timeago.settings.refreshMillis = 0;
-            $.blockUI.defaults.message = '<h3><img src="assets/Images/ajax-loader.gif" />' + " " + l('%app.loading') + '</h3>';
+            $.blockUI.defaults.message = '<h3><img src="assets/images/ajax-loader.gif" />' + " " + l('%app.loading') + '</h3>';
 
             Handlebars.registerHelper("debug", function (optionalValue) {
                 console.log("Current Context");
