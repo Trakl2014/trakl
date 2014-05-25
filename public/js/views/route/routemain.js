@@ -163,24 +163,31 @@ define([
         ddlRouteChange: function (e) {
             var that = this;
 
-            var model = new Model();
-            model.urlRoot = 'Api/travel-time';
 
-            /*model.set({'userId': 44});
+            var model = new Model();
+            model.urlRoot = 'api/travel-time';
+
+            model.set({'userId': 44});
             model.set({ 'journeyRef': this.$('#ddlRoute :selected').val() })
             model.save({},{
                 'async': false
             });
 
+            $.blockUI();
 
             model.fetch({
                 "data": $.param({ 'userId': 44 }),
-                'async': false
-            });*/
+                "async": true,
+                "success": function() {
+                  $.unblockUI();
+                  var data = model.toJSON();
+                  that.showConditions(data.isImproving === "true", data.travelMinutes);
+                },
+                "error": function() {
+                  $.unblockUI();
+                }
+            });
 
-            var data = model.toJSON();
-
-            this.showConditions(data.isImproving, data.travelMinutes);
             var selectedOption = this.$('#ddlRoute :selected');
             var startLat = parseFloat(selectedOption.attr('data-start-lat'));
             var startLong = parseFloat(selectedOption.attr('data-start-long'));
@@ -189,6 +196,7 @@ define([
             this.directionsDisplay.setMap(null);
             this.directionsDisplay = new google.maps.DirectionsRenderer();
             this.directionsDisplay.setMap(this.map);
+
             var request = {
                 origin: new google.maps.LatLng(startLat, startLong),
                 destination: new google.maps.LatLng(endLat, endLong),
@@ -215,14 +223,14 @@ define([
                 this.$('.improving-value').show();
                 this.$('.improving-arrow').show();
                 this.$('.improving-text').show();
-                this.$('.improving-value .text-time').val(minutes? minutes : 0);
+                this.$('.improving-value .text-time').html(minutes? minutes : 0);
                 this.$('#leftPanel').css('background-color', '#d7f4d7');
             }
             else {
                 this.$('.degrading-value').show();
                 this.$('.degrading-arrow').show();
                 this.$('.degrading-text').show();
-                this.$('.degrading-value .text-time').val(minutes? minutes : 0);
+                this.$('.degrading-value .text-time').html(minutes? minutes : 0);
                 this.$('#leftPanel').css('background-color', '#fecccc');
             }
 
