@@ -44,6 +44,7 @@ var journeyData = {
           path: '/journey?ref=' + journeyRef
       };
 
+      console.log('journeyRef: ' + journeyRef);
       https.get(trafficOptions, function (trafficResponse) {
 
           var trafficData = '';
