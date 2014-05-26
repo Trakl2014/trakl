@@ -17,6 +17,14 @@ body *
     background-position-y:center;
     background-position-x: 20px;
 }
+.banner{
+    background-image:url(../images/esther_feature_1024x500.png);
+    background-position-y:center;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
 /* footer panel */
 .footer
 {

@@ -1,9 +1,9 @@
 ﻿define([
 	'traklview',
+    'text!templates/home.htm',
     'models/Model',
     'handlebars',
 ], function (View, HomeTemplate, Model) {
-
       HomeView = View.extend({
         el: $("#main"),
         initialize: function () {
@@ -15,6 +15,8 @@
         model: new Model,
         template: Handlebars.compile(HomeTemplate),
         render: function () {
+            $.unblockUI();
+            this.$el.html(this.template());
         },
         open: function () {
             this.render();
