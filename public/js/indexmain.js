@@ -89,7 +89,7 @@ require.config({
 });
 
 var TraklApp;
-var version = "1.0.0.25";
+var version = "1.0.0.0";
 
 require(['indexapp'], function (app) {
     TraklApp = app;
@@ -105,14 +105,6 @@ require(['indexapp'], function (app) {
     $.expr[':'].notcontainsIgnoreCase = function (n, i, m) {
         return jQuery(n).text().toUpperCase().indexOf(m[3].toUpperCase()) < 0;
     };
-
-    if ($.cookie("tokenid") != null) {
-        TraklApp.State.set({ "tokenid": $.cookie("tokenid") });
-    }
-
-    if ($.cookie("username") != null) {
-        TraklApp.State.set({ "username": $.cookie("username") });
-    }
 
     $.ajaxSetup({
         'beforeSend': function (xhr) {

@@ -1,11 +1,7 @@
 ﻿define([
 	'traklview',
-	'text!templates/login.htm',
     'models/Model',
-    'jqueryvalidate',
     'handlebars',
-    'l10n',
-    'localizations',
 ], function (View, HomeTemplate, Model) {
 
       HomeView = View.extend({
@@ -19,8 +15,6 @@
         model: new Model,
         template: Handlebars.compile(HomeTemplate),
         render: function () {
-
-            
         },
         open: function () {
             this.render();
@@ -57,5 +51,5 @@
 
     });
 
-    return LoginView;
+      return HomeView;
 });

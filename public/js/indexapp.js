@@ -17,7 +17,7 @@ define([
 
     Router = Backbone.Router.extend({
         initialize: function () {
-            _.bindAll(this, 'closeViews', 'clearState');
+            _.bindAll(this, 'clearState');
         },
         routeviews: {
             "route": "views/route/routemain",
@@ -67,47 +67,6 @@ define([
             TraklApp.State.set({ "tokenid": null, "username": null, "accounttype": null, 'preference': null, 'headerview': null });
 
         },
-        closeViews: function (noHeader, callbackFunction) {
-            var openview = TraklApp.State.get("openview");
-
-            if (openview) {
-                $(openview.el).unbind();
-                openview.close();
-                openview = null;
-            }
-
-            if (!noHeader) {
-                if (!TraklApp.State.get("headerview")) {
-                    require(['views/header'], function (HeaderView) {
-                        TraklApp.State.set({ "headerview": new HeaderView() });
-
-
-                        if (typeof callbackFunction == 'function') {
-                            TraklApp.State.get("headerview").open(callbackFunction);
-                        }
-                        else {
-                            TraklApp.State.get("headerview").open();
-                        }
-                    });
-
-                    require(['text!templates/footer.htm'], function (footer) {
-                        $(".footer").html(footer);
-                    });
-                }
-                else {
-                    if (typeof callbackFunction == 'function') {
-                        callbackFunction.call(this);
-                    }
-                }
-            }
-            else {
-                if (typeof callbackFunction == 'function') {
-                    callbackFunction.call(this);
-                }
-            }
-            this.resetLayout();
-            return true;
-        },
         defaultRoute: function (actions) {
             if (!TraklApp.State.get("headerview")) {
                 require(['views/header'], function (HeaderView) {
@@ -148,7 +107,7 @@ define([
             var footerH = $('.footer').innerHeight();
             var height_used = headerH + footerH;
 
-            $('#main').height($(window).height() - height_used - 2 + 'px');
+            $('#main').height($(window).height() - height_used + 'px');
         }
 
     });
@@ -251,13 +210,7 @@ define([
                 }
                 return '';
             });
-            Handlebars.registerHelper("fieldIDHelper", function (val) {
-                arr = [11, 7, 5]
-                if ($.inArray(parseInt(val), arr) == -1) {
-                    return 'style=display:none';
-                }
-                return "";
-            });
+            
             Handlebars.registerHelper("dateFormat", function (strDate, format) {
                 var date = null;
                 if (strDate) {

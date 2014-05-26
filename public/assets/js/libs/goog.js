@@ -31,7 +31,7 @@ define(['async', 'propertyParser'], function (async, propertyParser) {
                 settings.callback = onLoad;
 
                 //Setting Google API key and load the modules
-                req(['async!' + (document.location.protocol === 'https:' ? 'https' : 'http') + '://www.google.com/jsapi?client=gme-xleratesoftwaresolutions'], function () {
+                req(['async!' + (document.location.protocol === 'https:' ? 'https' : 'http') + '://www.google.com/jsapi?key=AIzaSyDcW0xIRrUtV9oMmudRFkuv8YCl-2M7eRg'], function () {
                     google.load(data.moduleName, data.version, settings);
                 });
             }
