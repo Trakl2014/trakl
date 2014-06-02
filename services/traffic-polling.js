@@ -6,7 +6,7 @@ var util = require('util');
 
 var TWO_MINUTES = 1000 * 60 * 2;
 var FIVE_MINUTES = 1000 * 60 * 5;
-
+var TEN_MINUTES = 1000 * 60 * 10;
 var messageTemplate = 'Hi Lee, this is Esther. Your trip home will take XXXX minutes, and conditions are getting YYYY.';
 
 /*
@@ -69,7 +69,7 @@ var activatePolling = function(storedJourneys) {
     // Update every 5 minutes
     setInterval(function() {
         updateTrafficData(storedJourneys);
-    }, FIVE_MINUTES);
+    }, TEN_MINUTES);
 
 };
 

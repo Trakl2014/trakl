@@ -75,9 +75,11 @@
 
 .trendIndicator {
      background-repeat: no-repeat;
-     width: 313px;
+     width: 50%;
      height: 75px;
      margin: 20px auto;  
+     max-width: 313px;
+     background-size:contain;
 }
 
 
