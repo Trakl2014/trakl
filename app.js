@@ -31,3 +31,9 @@ http.createServer(app).listen(app.get('port'), function() {
 });
 
 traffic.startPolling();
+var UA_KEY = process.env['UA_KEY'] || "on local ua key not set";
+var UA_SECRET = process.env['UA_SECRET'] || "on local ua secret not set";
+var UA_MASTER_SECRET = process.env['UA_MASTER_SECRET'] || "on local master secret key not set";
+console.log(UA_KEY);
+console.log(UA_SECRET);
+console.log(UA_MASTER_SECRET);
