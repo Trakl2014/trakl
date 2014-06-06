@@ -28,6 +28,7 @@
 
         $scope.fetch = function() {
             $http.get('/api/travel-time?userId=44').success($scope.handleDataLoaded);
+            // $http.get('/api/travel-time?userId=50').success($scope.handleDataLoaded);
             console.log('scope fetch')
             // $http({
             //     method: 'GET',

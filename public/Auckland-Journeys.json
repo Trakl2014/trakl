@@ -1,690 +1,603 @@
-[
-    {
-        "endLat": "-36.714802",
-        "endLong": "174.710037",
-        "name": "AKL-SH1-NB-RNM",
-        "ref": "AKL-SH1-NB-RNM",
-        "startLat": "-37.076405",
-        "startLong": "174.930023"
-    },
-    {
-        "endLat": "-37.073689",
-        "endLong": "174.929108",
-        "name": "AKL-SH1-SB-RNM",
-        "ref": "AKL-SH1-SB-RNM",
-        "startLat": "-36.714222",
-        "startLong": "174.709793"
-    },
-    {
-        "endLat": "-36.847881",
-        "endLong": "174.783463",
-        "name": "AKL-SH16-EB-RNM",
-        "ref": "AKL-SH16-EB-RNM",
-        "startLat": "-36.797199",
-        "startLong": "174.597382"
-    },
-    {
-        "endLat": "-36.79742",
-        "endLong": "174.597168",
-        "name": "AKL-SH16-WB-RNM",
-        "ref": "AKL-SH16-WB-RNM",
-        "startLat": "-36.847889",
-        "startLong": "174.783524"
-    },
-    {
-        "endLat": "-36.750671",
-        "endLong": "174.726257",
-        "name": "AKL-SH18-EB-RNM",
-        "ref": "AKL-SH18-EB-RNM",
-        "startLat": "-36.82143",
-        "startLong": "174.615387"
-    },
-    {
-        "endLat": "-36.818226",
-        "endLong": "174.61441",
-        "name": "AKL-SH18-WB-RNM",
-        "ref": "AKL-SH18-WB-RNM",
-        "startLat": "-36.750767",
-        "startLong": "174.726334"
-    },
-    {
-        "endLat": "-36.904018",
-        "endLong": "174.722824",
-        "name": "AKL-SH20-NB-RNM",
-        "ref": "AKL-SH20-NB-RNM",
-        "startLat": "-37.001022",
-        "startLong": "174.893188"
-    },
-    {
-        "endLat": "-36.995831",
-        "endLong": "174.883835",
-        "name": "AKL-SH20-SB-RNM",
-        "ref": "AKL-SH20-SB-RNM",
-        "startLat": "-36.903084",
-        "startLong": "174.724121"
-    },
-    {
-        "endLat": "-36.958729",
-        "endLong": "174.797775",
-        "name": "AKL-SH20A-NB-RNM",
-        "ref": "AKL-SH20A-NB-RNM",
-        "startLat": "-37.001732",
-        "startLong": "174.789474"
-    },
-    {
-        "endLat": "-37.001617",
-        "endLong": "174.789474",
-        "name": "AKL-SH20A-SB-RNM",
-        "ref": "AKL-SH20A-SB-RNM",
-        "startLat": "-36.958351",
-        "startLong": "174.797791"
-    },
-    {
-        "endLat": "-36.993114",
-        "endLong": "174.843918",
-        "name": "AKL-SH20B-SB-RNM",
-        "ref": "AKL-SH20B-SB-RNM",
-        "startLat": "-37.001617",
-        "startLong": "174.789474"
-    },
-    {
-        "endLat": "-37.001732",
-        "endLong": "174.789474",
-        "name": "AKL-SH20B-WB-RNM",
-        "ref": "AKL-SH20B-WB-RNM",
-        "startLat": "-36.993126",
-        "startLong": "174.844254"
-    },
-    {
-        "endLat": "-36.860554",
-        "endLong": "174.760178",
-        "name": "R04-NB - Dominion Rd",
-        "ref": "R04-NB",
-        "startLat": "-36.910793",
-        "startLong": "174.739594"
-    },
-    {
-        "endLat": "-36.910862",
-        "endLong": "174.739731",
-        "name": "R04-SB - Dominion Rd",
-        "ref": "R04-SB",
-        "startLat": "-36.860554",
-        "startLong": "174.760178"
-    },
-    {
-        "endLat": "-36.927025",
-        "endLong": "174.897858",
-        "name": "R05-EB - Ellerslie to Horwick",
-        "ref": "R05-EB",
-        "startLat": "-36.903183",
-        "startLong": "174.811707"
-    },
-    {
-        "endLat": "-36.903606",
-        "endLong": "174.812302",
-        "name": "R05-WB - Horwick to Ellerslie",
-        "ref": "R05-WB",
-        "startLat": "-36.927025",
-        "startLong": "174.897858"
-    },
-    {
-        "endLat": "-36.945881",
-        "endLong": "174.845337",
-        "name": "R06-EB - Fanshawe St to Great South Rd",
-        "ref": "R06-EB",
-        "startLat": "-36.845001",
-        "startLong": "174.752823"
-    },
-    {
-        "endLat": "-36.845146",
-        "endLong": "174.752823",
-        "name": "R06-WB - Great South Rd to Fanshawe St",
-        "ref": "R06-WB",
-        "startLat": "-36.945881",
-        "startLong": "174.845337"
-    },
-    {
-        "endLat": "-36.8503",
-        "endLong": "174.857361",
-        "name": "R07-EB - Tamaki Dr",
-        "ref": "R07-EB",
-        "startLat": "-36.852631",
-        "startLong": "174.805405"
-    },
-    {
-        "endLat": "-36.852631",
-        "endLong": "174.805405",
-        "name": "R07-WB - Tamaki Dr",
-        "ref": "R07-WB",
-        "startLat": "-36.8503",
-        "startLong": "174.857361"
-    },
-    {
-        "endLat": "-36.911789",
-        "endLong": "174.869293",
-        "name": "R08-NB - Pakarunga Rd to Great South Rd",
-        "ref": "R08-NB",
-        "startLat": "-36.968651",
-        "startLong": "174.859756"
-    },
-    {
-        "endLat": "-36.968651",
-        "endLong": "174.859756",
-        "name": "R08-SB - Great South Rd to Pakarunga Rd",
-        "ref": "R08-SB",
-        "startLat": "-36.911789",
-        "startLong": "174.869293"
-    },
-    {
-        "endLat": "-36.868248",
-        "endLong": "174.845428",
-        "name": "R09-EB - Great North Rd to St Johns Rd",
-        "ref": "R09-EB",
-        "startLat": "-36.86919",
-        "startLong": "174.7258"
-    },
-    {
-        "endLat": "-36.86919",
-        "endLong": "174.7258",
-        "name": "R09-WB - St Johns Rd to Great North Rd",
-        "ref": "R09-WB",
-        "startLat": "-36.868248",
-        "startLong": "174.845428"
-    },
-    {
-        "endLat": "-36.870834",
-        "endLong": "174.709869",
-        "name": "R10-NB - Waipuna Rd to Great North Rd",
-        "ref": "R10-NB",
-        "startLat": "-36.914963",
-        "startLong": "174.870926"
-    },
-    {
-        "endLat": "-36.914963",
-        "endLong": "174.870926",
-        "name": "R10-SB - Great North Rd to Waipuna Rd",
-        "ref": "R10-SB",
-        "startLat": "-36.870834",
-        "startLong": "174.709869"
-    },
-    {
-        "endLat": "-36.911117",
-        "endLong": "174.853882",
-        "name": "R10A-EB - Great South Rd to South Eastern Highway",
-        "ref": "R10A-EB",
-        "startLat": "-36.911362",
-        "startLong": "174.818253"
-    },
-    {
-        "endLat": "-36.911362",
-        "endLong": "174.818253",
-        "name": "R10A-WB - South Eastern Highway to Great South Rd",
-        "ref": "R10A-WB",
-        "startLat": "-36.911117",
-        "startLong": "174.853882"
-    },
-    {
-        "endLat": "-36.896652",
-        "endLong": "174.70108",
-        "name": "R11-NB - Blockhouse Bay Rd",
-        "ref": "R11-NB",
-        "startLat": "-36.922771",
-        "startLong": "174.701599"
-    },
-    {
-        "endLat": "-36.922771",
-        "endLong": "174.701599",
-        "name": "R11-SB - Blockhouse Bay Rd",
-        "ref": "R11-SB",
-        "startLat": "-36.896652",
-        "startLong": "174.70108"
-    },
-    {
-        "endLat": "-36.850891",
-        "endLong": "174.764511",
-        "name": "R12-IB - Airport to Auckland City Centre",
-        "ref": "AKL-CBD",
-        "startLat": "-37.001732",
-        "startLong": "174.789474"
-    },
-    {
-        "endLat": "-37.001617",
-        "endLong": "174.789474",
-        "name": "R12-OB - Auckland City Centre to Airport",
-        "ref": "CBD-AKL",
-        "startLat": "-36.850891",
-        "startLong": "174.764511"
-    },
-    {
-        "endLat": "-36.859882",
-        "endLong": "174.651184",
-        "name": "R13-NB - Forest Hill Rd to SH16",
-        "ref": "R13-NB",
-        "startLat": "-36.900181",
-        "startLong": "174.615494"
-    },
-    {
-        "endLat": "-36.900181",
-        "endLong": "174.615494",
-        "name": "R13-SB - SH16 to Forest Hill Rd",
-        "ref": "R13-SB",
-        "startLat": "-36.85841",
-        "startLong": "174.652512"
-    },
-    {
-        "endLat": "-36.951019",
-        "endLong": "174.845123",
-        "name": "R14-EB - SH20A to Great South Rd",
-        "ref": "R14-EB",
-        "startLat": "-36.973854",
-        "startLong": "174.789642"
-    },
-    {
-        "endLat": "-36.974033",
-        "endLong": "174.789658",
-        "name": "R14-SB - Great South Rd to SH20A",
-        "ref": "R14-SB",
-        "startLat": "-36.951019",
-        "startLong": "174.845123"
-    },
-    {
-        "endLat": "-36.909191",
-        "endLong": "174.76239",
-        "name": "R15-EB - Godfrey Hillborough",
-        "ref": "R15-EB",
-        "startLat": "-36.933098",
-        "startLong": "174.659882"
-    },
-    {
-        "endLat": "-36.933098",
-        "endLong": "174.659882",
-        "name": "R15-WB - Godfrey Hillborough",
-        "ref": "R15-WB",
-        "startLat": "-36.909191",
-        "startLong": "174.76239"
-    },
-    {
-        "endLat": "-36.928837",
-        "endLong": "174.912476",
-        "name": "R17-NB - Cavendish Drive, Roscommon Rd, Weymouth Rd",
-        "ref": "R17-NB",
-        "startLat": "-37.023422",
-        "startLong": "174.898895"
-    },
-    {
-        "endLat": "-37.023422",
-        "endLong": "174.898895",
-        "name": "R17-SB - Cavendish Drive, Roscommon Rd, Weymouth Rd",
-        "ref": "R17-SB",
-        "startLat": "-36.928837",
-        "startLong": "174.912476"
-    },
-    {
-        "endLat": "-36.847256",
-        "endLong": "174.631607",
-        "name": "R19-NB - Lincoln Road",
-        "ref": "R19-NB",
-        "startLat": "-36.878281",
-        "startLong": "174.631012"
-    },
-    {
-        "endLat": "-36.878281",
-        "endLong": "174.631012",
-        "name": "R19-SB - Lincoln Road",
-        "ref": "R19-SB",
-        "startLat": "-36.847328",
-        "startLong": "174.63176"
-    },
-    {
-        "endLat": "-36.727623",
-        "endLong": "174.728088",
-        "name": "R21-NB - East Coast Road",
-        "ref": "R21-NB",
-        "startLat": "-36.771553",
-        "startLong": "174.743454"
-    },
-    {
-        "endLat": "-36.771568",
-        "endLong": "174.742111",
-        "name": "R21-SB - East Coast Road",
-        "ref": "R21-SB",
-        "startLat": "-36.727623",
-        "startLong": "174.728088"
-    },
-    {
-        "endLat": "-36.702412",
-        "endLong": "174.721008",
-        "name": "R25-NB - East Coast Road",
-        "ref": "R25-NB",
-        "startLat": "-36.733852",
-        "startLong": "174.718491"
-    },
-    {
-        "endLat": "-36.734463",
-        "endLong": "174.718246",
-        "name": "R25-SB - East Coast Road",
-        "ref": "R25-SB",
-        "startLat": "-36.702412",
-        "startLong": "174.721008"
-    },
-    {
-        "endLat": "-36.772346",
-        "endLong": "174.741333",
-        "name": "R26-NB - Devonport to Tristram Rd",
-        "ref": "R26-NB",
-        "startLat": "-36.824753",
-        "startLong": "174.798523"
-    },
-    {
-        "endLat": "-36.824753",
-        "endLong": "174.798523",
-        "name": "R26-SB - Devonport to Tristram Rd",
-        "ref": "R26-SB",
-        "startLat": "-36.772346",
-        "startLong": "174.741333"
-    },
-    {
-        "endLat": "-36.797035",
-        "endLong": "174.765213",
-        "name": "R26B-EB - Esmonde Rd",
-        "ref": "R26B-EB",
-        "startLat": "-36.798775",
-        "startLong": "174.761826"
-    },
-    {
-        "endLat": "-36.79966",
-        "endLong": "174.760956",
-        "name": "R26B-WB - Esmonde Rd",
-        "ref": "R26B-WB",
-        "startLat": "-36.796566",
-        "startLong": "174.766098"
-    },
-    {
-        "endLat": "-36.81514",
-        "endLong": "174.751312",
-        "name": "R27-EB - Birkenhead Ave to SH1",
-        "ref": "R27-EB",
-        "startLat": "-36.810043",
-        "startLong": "174.725494"
-    },
-    {
-        "endLat": "-36.810043",
-        "endLong": "174.725494",
-        "name": "R27-WB - SH1 to Birkenhead Ave",
-        "ref": "R27-WB",
-        "startLat": "-36.814793",
-        "startLong": "174.751266"
-    },
-    {
-        "endLat": "-36.710674",
-        "endLong": "174.667969",
-        "name": "R28-NB - Coatesville Riverhead",
-        "ref": "R28-NB",
-        "startLat": "-36.788242",
-        "startLong": "174.58342"
-    },
-    {
-        "endLat": "-36.788242",
-        "endLong": "174.58342",
-        "name": "R28-SB - Coatesville Riverhead",
-        "ref": "R28-SB",
-        "startLat": "-36.710674",
-        "startLong": "174.667969"
-    },
-    {
-        "endLat": "-36.709255",
-        "endLong": "174.727814",
-        "name": "R29-NB - Onewa Rd to East Coast Bays Rd",
-        "ref": "R29-NB",
-        "startLat": "-36.810043",
-        "startLong": "174.725494"
-    },
-    {
-        "endLat": "-36.810043",
-        "endLong": "174.725494",
-        "name": "R29-SB - East Coast Bays Rd to Onewa Rd",
-        "ref": "R29-SB",
-        "startLat": "-36.709255",
-        "startLong": "174.727814"
-    },
-    {
-        "endLat": "-36.625168",
-        "endLong": "174.661804",
-        "name": "R31-NB - Dairy Flat Highway",
-        "ref": "R31-NB",
-        "startLat": "-36.735966",
-        "startLong": "174.716873"
-    },
-    {
-        "endLat": "-36.735405",
-        "endLong": "174.716064",
-        "name": "R31-SB - Dairy Flat Highway",
-        "ref": "R31-SB",
-        "startLat": "-36.625698",
-        "startLong": "174.661804"
-    },
-    {
-        "endLat": "-36.791969",
-        "endLong": "174.655533",
-        "name": "R32-EB - Hobsonville Road",
-        "ref": "R32-EB",
-        "startLat": "-36.818027",
-        "startLong": "174.615173"
-    },
-    {
-        "endLat": "-36.818024",
-        "endLong": "174.616577",
-        "name": "R32-WB - Hobsonville Road",
-        "ref": "R32-WB",
-        "startLat": "-36.791969",
-        "startLong": "174.655533"
-    },
-    {
-        "endLat": "-36.613808",
-        "endLong": "174.791046",
-        "name": "R33-EB - SH1 to Golf Harbour",
-        "ref": "R33-EB",
-        "startLat": "-36.624748",
-        "startLong": "174.663788"
-    },
-    {
-        "endLat": "-36.624668",
-        "endLong": "174.664825",
-        "name": "R33-WB - Golf Harbour to SH1",
-        "ref": "R33-WB",
-        "startLat": "-36.613808",
-        "startLong": "174.791046"
-    },
-    {
-        "endLat": "-36.945564",
-        "endLong": "174.96373",
-        "name": "R34-EB - East Tamaki Rd to Whitford Rd",
-        "ref": "R34-EB",
-        "startLat": "-36.960396",
-        "startLong": "174.888779"
-    },
-    {
-        "endLat": "-36.960396",
-        "endLong": "174.888779",
-        "name": "R34-WB - Witford Rd to East Tamaki Rd",
-        "ref": "R34 - WB",
-        "startLat": "-36.945564",
-        "startLong": "174.96373"
-    },
-    {
-        "endLat": "-36.902504",
-        "endLong": "174.724915",
-        "name": "R35-EB - Great North Rd to SH20",
-        "ref": "R35-EB",
-        "startLat": "-36.909199",
-        "startLong": "174.680313"
-    },
-    {
-        "endLat": "-36.909199",
-        "endLong": "174.680313",
-        "name": "R35-WB - SH20 to Great North Rd",
-        "ref": "R35-WB",
-        "startLat": "-36.902504",
-        "startLong": "174.724915"
-    },
-    {
-        "endLat": "-36.909199",
-        "endLong": "174.680313",
-        "name": "R35A-EB - Great North Road",
-        "ref": "R35A-EB",
-        "startLat": "-36.879688",
-        "startLong": "174.63533"
-    },
-    {
-        "endLat": "-36.879688",
-        "endLong": "174.63533",
-        "name": "R35A-WB - Great North Road",
-        "ref": "R35A-WB",
-        "startLat": "-36.909199",
-        "startLong": "174.680313"
-    },
-    {
-        "endLat": "-37.005959",
-        "endLong": "174.855179",
-        "name": "R37-NB - Pakakura Cleavdon Rd to Roscommon Rd",
-        "ref": "R37-NB",
-        "startLat": "-37.055084",
-        "startLong": "174.958572"
-    },
-    {
-        "endLat": "-37.055084",
-        "endLong": "174.958572",
-        "name": "R37-SB - Roscommon Rd to Papakura Cleavdon Rd",
-        "ref": "R37-SB",
-        "startLat": "-37.005959",
-        "startLong": "174.855179"
-    },
-    {
-        "endLat": "-36.857918",
-        "endLong": "174.761414",
-        "name": "R80-EB - Great North Road",
-        "ref": "R80-EB",
-        "startLat": "-36.871983",
-        "startLong": "174.704895"
-    },
-    {
-        "endLat": "-36.87254",
-        "endLong": "174.705383",
-        "name": "R80-WB - Great North Road",
-        "ref": "R80-WB",
-        "startLat": "-36.857918",
-        "startLong": "174.761414"
-    },
-    {
-        "endLat": "-36.871982",
-        "endLong": "174.704895",
-        "name": "R81-EB - Great North Road",
-        "ref": "R81-EB",
-        "startLat": "-36.908978",
-        "startLong": "174.677368"
-    },
-    {
-        "endLat": "-36.908978",
-        "endLong": "174.677368",
-        "name": "R81-WB - Great North Road",
-        "ref": "R81-WB",
-        "startLat": "-36.87254",
-        "startLong": "174.705383"
-    },
-    {
-        "endLat": "-36.943233",
-        "endLong": "174.8936",
-        "name": "R82-EB - Highbrook Drive",
-        "ref": "R82-EB",
-        "startLat": "-36.951168",
-        "startLong": "174.859695"
-    },
-    {
-        "endLat": "-36.952267",
-        "endLong": "174.858444",
-        "name": "R82-WB - Highbrook Drive",
-        "ref": "R82-WB",
-        "startLat": "-36.943233",
-        "startLong": "174.8936"
-    },
-    {
-        "endLat": "-36.920216",
-        "endLong": "174.813385",
-        "name": "R83-EB - Neilson Street",
-        "ref": "R83-EB",
-        "startLat": "-36.925938",
-        "startLong": "174.776794"
-    },
-    {
-        "endLat": "-36.927822",
-        "endLong": "174.782272",
-        "name": "R83-WB - Neilson Street",
-        "ref": "R83-WB",
-        "startLat": "-36.920216",
-        "startLong": "174.813385"
-    },
-    {
-        "endLat": "-36.917",
-        "endLong": "174.833878",
-        "name": "R84-WB SH1 to Neilson Link",
-        "ref": "R84-WB",
-        "startLat": "-36.916031",
-        "startLong": "174.830994"
-    },
-    {
-        "endLat": "-36.926456",
-        "endLong": "174.785843",
-        "name": "R85-SB - Onehunga Wharf Road",
-        "ref": "R85-SB",
-        "startLat": "-36.929626",
-        "startLong": "174.782974"
-    },
-    {
-        "endLat": "-36.771782",
-        "endLong": "174.740402",
-        "name": "R86-EB - Wairua Road",
-        "ref": "R86-EB",
-        "startLat": "-36.769718",
-        "startLong": "174.721924"
-    },
-    {
-        "endLat": "-36.769718",
-        "endLong": "174.721924",
-        "name": "R86-WB - Wairau Road",
-        "ref": "R86-WB",
-        "startLat": "-36.772346",
-        "startLong": "174.741333"
-    },
-    {
-        "endLat": "-36.844677",
-        "endLong": "174.766663",
-        "name": "R87-NB - Queen Street",
-        "ref": "R87-NB",
-        "startLat": "-36.850891",
-        "startLong": "174.764511"
-    },
-    {
-        "endLat": "-36.850891",
-        "endLong": "174.764511",
-        "name": "R87-SB - Queen Street",
-        "ref": "R87-SB",
-        "startLat": "-36.844677",
-        "startLong": "174.766663"
-    },
-    {
-        "endLat": "-36.865364",
-        "endLong": "174.744522",
-        "name": "R99-NB - SH20 to Great North Rd",
-        "ref": "R99-NB",
-        "startLat": "-36.902504",
-        "startLong": "174.724915"
-    },
-    {
-        "endLat": "-36.902504",
-        "endLong": "174.724915",
-        "name": "R99-SB - Great North Rd to SH20",
-        "ref": "R99-SB",
-        "startLat": "-36.865364",
-        "startLong": "174.744522"
-    }
-]
+[{
+    "endLat": "-36.714802",
+    "endLong": "174.710037",
+    "name": "AKL-SH1-NB-RNM",
+    "ref": "AKL-SH1-NB-RNM",
+    "startLat": "-37.076405",
+    "startLong": "174.930023"
+}, {
+    "endLat": "-37.073689",
+    "endLong": "174.929108",
+    "name": "AKL-SH1-SB-RNM",
+    "ref": "AKL-SH1-SB-RNM",
+    "startLat": "-36.714222",
+    "startLong": "174.709793"
+}, {
+    "endLat": "-36.847881",
+    "endLong": "174.783463",
+    "name": "AKL-SH16-EB-RNM",
+    "ref": "AKL-SH16-EB-RNM",
+    "startLat": "-36.797199",
+    "startLong": "174.597382"
+}, {
+    "endLat": "-36.79742",
+    "endLong": "174.597168",
+    "name": "AKL-SH16-WB-RNM",
+    "ref": "AKL-SH16-WB-RNM",
+    "startLat": "-36.847889",
+    "startLong": "174.783524"
+}, {
+    "endLat": "-36.750671",
+    "endLong": "174.726257",
+    "name": "AKL-SH18-EB-RNM",
+    "ref": "AKL-SH18-EB-RNM",
+    "startLat": "-36.82143",
+    "startLong": "174.615387"
+}, {
+    "endLat": "-36.818226",
+    "endLong": "174.61441",
+    "name": "AKL-SH18-WB-RNM",
+    "ref": "AKL-SH18-WB-RNM",
+    "startLat": "-36.750767",
+    "startLong": "174.726334"
+}, {
+    "endLat": "-36.904018",
+    "endLong": "174.722824",
+    "name": "AKL-SH20-NB-RNM",
+    "ref": "AKL-SH20-NB-RNM",
+    "startLat": "-37.001022",
+    "startLong": "174.893188"
+}, {
+    "endLat": "-36.995831",
+    "endLong": "174.883835",
+    "name": "AKL-SH20-SB-RNM",
+    "ref": "AKL-SH20-SB-RNM",
+    "startLat": "-36.903084",
+    "startLong": "174.724121"
+}, {
+    "endLat": "-36.958729",
+    "endLong": "174.797775",
+    "name": "AKL-SH20A-NB-RNM",
+    "ref": "AKL-SH20A-NB-RNM",
+    "startLat": "-37.001732",
+    "startLong": "174.789474"
+}, {
+    "endLat": "-37.001617",
+    "endLong": "174.789474",
+    "name": "AKL-SH20A-SB-RNM",
+    "ref": "AKL-SH20A-SB-RNM",
+    "startLat": "-36.958351",
+    "startLong": "174.797791"
+}, {
+    "endLat": "-36.993114",
+    "endLong": "174.843918",
+    "name": "AKL-SH20B-SB-RNM",
+    "ref": "AKL-SH20B-SB-RNM",
+    "startLat": "-37.001617",
+    "startLong": "174.789474"
+}, {
+    "endLat": "-37.001732",
+    "endLong": "174.789474",
+    "name": "AKL-SH20B-WB-RNM",
+    "ref": "AKL-SH20B-WB-RNM",
+    "startLat": "-36.993126",
+    "startLong": "174.844254"
+}, {
+    "endLat": "-36.860554",
+    "endLong": "174.760178",
+    "name": "R04-NB - Dominion Rd",
+    "ref": "R04-NB",
+    "startLat": "-36.910793",
+    "startLong": "174.739594"
+}, {
+    "endLat": "-36.910862",
+    "endLong": "174.739731",
+    "name": "R04-SB - Dominion Rd",
+    "ref": "R04-SB",
+    "startLat": "-36.860554",
+    "startLong": "174.760178"
+}, {
+    "endLat": "-36.927025",
+    "endLong": "174.897858",
+    "name": "R05-EB - Ellerslie to Horwick",
+    "ref": "R05-EB",
+    "startLat": "-36.903183",
+    "startLong": "174.811707"
+}, {
+    "endLat": "-36.903606",
+    "endLong": "174.812302",
+    "name": "R05-WB - Horwick to Ellerslie",
+    "ref": "R05-WB",
+    "startLat": "-36.927025",
+    "startLong": "174.897858"
+}, {
+    "endLat": "-36.945881",
+    "endLong": "174.845337",
+    "name": "R06-EB - Fanshawe St to Great South Rd",
+    "ref": "R06-EB",
+    "startLat": "-36.845001",
+    "startLong": "174.752823"
+}, {
+    "endLat": "-36.845146",
+    "endLong": "174.752823",
+    "name": "R06-WB - Great South Rd to Fanshawe St",
+    "ref": "R06-WB",
+    "startLat": "-36.945881",
+    "startLong": "174.845337"
+}, {
+    "endLat": "-36.8503",
+    "endLong": "174.857361",
+    "name": "R07-EB - Tamaki Dr",
+    "ref": "R07-EB",
+    "startLat": "-36.852631",
+    "startLong": "174.805405"
+}, {
+    "endLat": "-36.852631",
+    "endLong": "174.805405",
+    "name": "R07-WB - Tamaki Dr",
+    "ref": "R07-WB",
+    "startLat": "-36.8503",
+    "startLong": "174.857361"
+}, {
+    "endLat": "-36.911789",
+    "endLong": "174.869293",
+    "name": "R08-NB - Pakarunga Rd to Great South Rd",
+    "ref": "R08-NB",
+    "startLat": "-36.968651",
+    "startLong": "174.859756"
+}, {
+    "endLat": "-36.968651",
+    "endLong": "174.859756",
+    "name": "R08-SB - Great South Rd to Pakarunga Rd",
+    "ref": "R08-SB",
+    "startLat": "-36.911789",
+    "startLong": "174.869293"
+}, {
+    "endLat": "-36.868248",
+    "endLong": "174.845428",
+    "name": "R09-EB - Great North Rd to St Johns Rd",
+    "ref": "R09-EB",
+    "startLat": "-36.86919",
+    "startLong": "174.7258"
+}, {
+    "endLat": "-36.86919",
+    "endLong": "174.7258",
+    "name": "R09-WB - St Johns Rd to Great North Rd",
+    "ref": "R09-WB",
+    "startLat": "-36.868248",
+    "startLong": "174.845428"
+}, {
+    "endLat": "-36.870834",
+    "endLong": "174.709869",
+    "name": "R10-NB - Waipuna Rd to Great North Rd",
+    "ref": "R10-NB",
+    "startLat": "-36.914963",
+    "startLong": "174.870926"
+}, {
+    "endLat": "-36.914963",
+    "endLong": "174.870926",
+    "name": "R10-SB - Great North Rd to Waipuna Rd",
+    "ref": "R10-SB",
+    "startLat": "-36.870834",
+    "startLong": "174.709869"
+}, {
+    "endLat": "-36.911117",
+    "endLong": "174.853882",
+    "name": "R10A-EB - Great South Rd to South Eastern Highway",
+    "ref": "R10A-EB",
+    "startLat": "-36.911362",
+    "startLong": "174.818253"
+}, {
+    "endLat": "-36.911362",
+    "endLong": "174.818253",
+    "name": "R10A-WB - South Eastern Highway to Great South Rd",
+    "ref": "R10A-WB",
+    "startLat": "-36.911117",
+    "startLong": "174.853882"
+}, {
+    "endLat": "-36.896652",
+    "endLong": "174.70108",
+    "name": "R11-NB - Blockhouse Bay Rd",
+    "ref": "R11-NB",
+    "startLat": "-36.922771",
+    "startLong": "174.701599"
+}, {
+    "endLat": "-36.922771",
+    "endLong": "174.701599",
+    "name": "R11-SB - Blockhouse Bay Rd",
+    "ref": "R11-SB",
+    "startLat": "-36.896652",
+    "startLong": "174.70108"
+}, {
+    "endLat": "-36.850891",
+    "endLong": "174.764511",
+    "name": "R12-IB - Airport to Auckland City Centre",
+    "ref": "AKL-CBD",
+    "startLat": "-37.001732",
+    "startLong": "174.789474"
+}, {
+    "endLat": "-37.001617",
+    "endLong": "174.789474",
+    "name": "R12-OB - Auckland City Centre to Airport",
+    "ref": "CBD-AKL",
+    "startLat": "-36.850891",
+    "startLong": "174.764511"
+}, {
+    "endLat": "-36.859882",
+    "endLong": "174.651184",
+    "name": "R13-NB - Forest Hill Rd to SH16",
+    "ref": "R13-NB",
+    "startLat": "-36.900181",
+    "startLong": "174.615494"
+}, {
+    "endLat": "-36.900181",
+    "endLong": "174.615494",
+    "name": "R13-SB - SH16 to Forest Hill Rd",
+    "ref": "R13-SB",
+    "startLat": "-36.85841",
+    "startLong": "174.652512"
+}, {
+    "endLat": "-36.951019",
+    "endLong": "174.845123",
+    "name": "R14-EB - SH20A to Great South Rd",
+    "ref": "R14-EB",
+    "startLat": "-36.973854",
+    "startLong": "174.789642"
+}, {
+    "endLat": "-36.974033",
+    "endLong": "174.789658",
+    "name": "R14-SB - Great South Rd to SH20A",
+    "ref": "R14-SB",
+    "startLat": "-36.951019",
+    "startLong": "174.845123"
+}, {
+    "endLat": "-36.909191",
+    "endLong": "174.76239",
+    "name": "R15-EB - Godfrey Hillborough",
+    "ref": "R15-EB",
+    "startLat": "-36.933098",
+    "startLong": "174.659882"
+}, {
+    "endLat": "-36.933098",
+    "endLong": "174.659882",
+    "name": "R15-WB - Godfrey Hillborough",
+    "ref": "R15-WB",
+    "startLat": "-36.909191",
+    "startLong": "174.76239"
+}, {
+    "endLat": "-36.928837",
+    "endLong": "174.912476",
+    "name": "R17-NB - Cavendish Drive, Roscommon Rd, Weymouth Rd",
+    "ref": "R17-NB",
+    "startLat": "-37.023422",
+    "startLong": "174.898895"
+}, {
+    "endLat": "-37.023422",
+    "endLong": "174.898895",
+    "name": "R17-SB - Cavendish Drive, Roscommon Rd, Weymouth Rd",
+    "ref": "R17-SB",
+    "startLat": "-36.928837",
+    "startLong": "174.912476"
+}, {
+    "endLat": "-36.847256",
+    "endLong": "174.631607",
+    "name": "R19-NB - Lincoln Road",
+    "ref": "R19-NB",
+    "startLat": "-36.878281",
+    "startLong": "174.631012"
+}, {
+    "endLat": "-36.878281",
+    "endLong": "174.631012",
+    "name": "R19-SB - Lincoln Road",
+    "ref": "R19-SB",
+    "startLat": "-36.847328",
+    "startLong": "174.63176"
+}, {
+    "endLat": "-36.727623",
+    "endLong": "174.728088",
+    "name": "R21-NB - East Coast Road",
+    "ref": "R21-NB",
+    "startLat": "-36.771553",
+    "startLong": "174.743454"
+}, {
+    "endLat": "-36.771568",
+    "endLong": "174.742111",
+    "name": "R21-SB - East Coast Road",
+    "ref": "R21-SB",
+    "startLat": "-36.727623",
+    "startLong": "174.728088"
+}, {
+    "endLat": "-36.702412",
+    "endLong": "174.721008",
+    "name": "R25-NB - East Coast Road",
+    "ref": "R25-NB",
+    "startLat": "-36.733852",
+    "startLong": "174.718491"
+}, {
+    "endLat": "-36.734463",
+    "endLong": "174.718246",
+    "name": "R25-SB - East Coast Road",
+    "ref": "R25-SB",
+    "startLat": "-36.702412",
+    "startLong": "174.721008"
+}, {
+    "endLat": "-36.772346",
+    "endLong": "174.741333",
+    "name": "R26-NB - Devonport to Tristram Rd",
+    "ref": "R26-NB",
+    "startLat": "-36.824753",
+    "startLong": "174.798523"
+}, {
+    "endLat": "-36.824753",
+    "endLong": "174.798523",
+    "name": "R26-SB - Devonport to Tristram Rd",
+    "ref": "R26-SB",
+    "startLat": "-36.772346",
+    "startLong": "174.741333"
+}, {
+    "endLat": "-36.797035",
+    "endLong": "174.765213",
+    "name": "R26B-EB - Esmonde Rd",
+    "ref": "R26B-EB",
+    "startLat": "-36.798775",
+    "startLong": "174.761826"
+}, {
+    "endLat": "-36.79966",
+    "endLong": "174.760956",
+    "name": "R26B-WB - Esmonde Rd",
+    "ref": "R26B-WB",
+    "startLat": "-36.796566",
+    "startLong": "174.766098"
+}, {
+    "endLat": "-36.81514",
+    "endLong": "174.751312",
+    "name": "R27-EB - Birkenhead Ave to SH1",
+    "ref": "R27-EB",
+    "startLat": "-36.810043",
+    "startLong": "174.725494"
+}, {
+    "endLat": "-36.810043",
+    "endLong": "174.725494",
+    "name": "R27-WB - SH1 to Birkenhead Ave",
+    "ref": "R27-WB",
+    "startLat": "-36.814793",
+    "startLong": "174.751266"
+}, {
+    "endLat": "-36.710674",
+    "endLong": "174.667969",
+    "name": "R28-NB - Coatesville Riverhead",
+    "ref": "R28-NB",
+    "startLat": "-36.788242",
+    "startLong": "174.58342"
+}, {
+    "endLat": "-36.788242",
+    "endLong": "174.58342",
+    "name": "R28-SB - Coatesville Riverhead",
+    "ref": "R28-SB",
+    "startLat": "-36.710674",
+    "startLong": "174.667969"
+}, {
+    "endLat": "-36.709255",
+    "endLong": "174.727814",
+    "name": "R29-NB - Onewa Rd to East Coast Bays Rd",
+    "ref": "R29-NB",
+    "startLat": "-36.810043",
+    "startLong": "174.725494"
+}, {
+    "endLat": "-36.810043",
+    "endLong": "174.725494",
+    "name": "R29-SB - East Coast Bays Rd to Onewa Rd",
+    "ref": "R29-SB",
+    "startLat": "-36.709255",
+    "startLong": "174.727814"
+}, {
+    "endLat": "-36.625168",
+    "endLong": "174.661804",
+    "name": "R31-NB - Dairy Flat Highway",
+    "ref": "R31-NB",
+    "startLat": "-36.735966",
+    "startLong": "174.716873"
+}, {
+    "endLat": "-36.735405",
+    "endLong": "174.716064",
+    "name": "R31-SB - Dairy Flat Highway",
+    "ref": "R31-SB",
+    "startLat": "-36.625698",
+    "startLong": "174.661804"
+}, {
+    "endLat": "-36.791969",
+    "endLong": "174.655533",
+    "name": "R32-EB - Hobsonville Road",
+    "ref": "R32-EB",
+    "startLat": "-36.818027",
+    "startLong": "174.615173"
+}, {
+    "endLat": "-36.818024",
+    "endLong": "174.616577",
+    "name": "R32-WB - Hobsonville Road",
+    "ref": "R32-WB",
+    "startLat": "-36.791969",
+    "startLong": "174.655533"
+}, {
+    "endLat": "-36.613808",
+    "endLong": "174.791046",
+    "name": "R33-EB - SH1 to Golf Harbour",
+    "ref": "R33-EB",
+    "startLat": "-36.624748",
+    "startLong": "174.663788"
+}, {
+    "endLat": "-36.624668",
+    "endLong": "174.664825",
+    "name": "R33-WB - Golf Harbour to SH1",
+    "ref": "R33-WB",
+    "startLat": "-36.613808",
+    "startLong": "174.791046"
+}, {
+    "endLat": "-36.945564",
+    "endLong": "174.96373",
+    "name": "R34-EB - East Tamaki Rd to Whitford Rd",
+    "ref": "R34-EB",
+    "startLat": "-36.960396",
+    "startLong": "174.888779"
+}, {
+    "endLat": "-36.960396",
+    "endLong": "174.888779",
+    "name": "R34-WB - Witford Rd to East Tamaki Rd",
+    "ref": "R34-WB",
+    "startLat": "-36.945564",
+    "startLong": "174.96373"
+}, {
+    "endLat": "-36.902504",
+    "endLong": "174.724915",
+    "name": "R35-EB - Great North Rd to SH20",
+    "ref": "R35-EB",
+    "startLat": "-36.909199",
+    "startLong": "174.680313"
+}, {
+    "endLat": "-36.909199",
+    "endLong": "174.680313",
+    "name": "R35-WB - SH20 to Great North Rd",
+    "ref": "R35-WB",
+    "startLat": "-36.902504",
+    "startLong": "174.724915"
+}, {
+    "endLat": "-36.909199",
+    "endLong": "174.680313",
+    "name": "R35A-EB - Great North Road",
+    "ref": "R35A-EB",
+    "startLat": "-36.879688",
+    "startLong": "174.63533"
+}, {
+    "endLat": "-36.879688",
+    "endLong": "174.63533",
+    "name": "R35A-WB - Great North Road",
+    "ref": "R35A-WB",
+    "startLat": "-36.909199",
+    "startLong": "174.680313"
+}, {
+    "endLat": "-37.005959",
+    "endLong": "174.855179",
+    "name": "R37-NB - Pakakura Cleavdon Rd to Roscommon Rd",
+    "ref": "R37-NB",
+    "startLat": "-37.055084",
+    "startLong": "174.958572"
+}, {
+    "endLat": "-37.055084",
+    "endLong": "174.958572",
+    "name": "R37-SB - Roscommon Rd to Papakura Cleavdon Rd",
+    "ref": "R37-SB",
+    "startLat": "-37.005959",
+    "startLong": "174.855179"
+}, {
+    "endLat": "-36.857918",
+    "endLong": "174.761414",
+    "name": "R80-EB - Great North Road",
+    "ref": "R80-EB",
+    "startLat": "-36.871983",
+    "startLong": "174.704895"
+}, {
+    "endLat": "-36.87254",
+    "endLong": "174.705383",
+    "name": "R80-WB - Great North Road",
+    "ref": "R80-WB",
+    "startLat": "-36.857918",
+    "startLong": "174.761414"
+}, {
+    "endLat": "-36.871982",
+    "endLong": "174.704895",
+    "name": "R81-EB - Great North Road",
+    "ref": "R81-EB",
+    "startLat": "-36.908978",
+    "startLong": "174.677368"
+}, {
+    "endLat": "-36.908978",
+    "endLong": "174.677368",
+    "name": "R81-WB - Great North Road",
+    "ref": "R81-WB",
+    "startLat": "-36.87254",
+    "startLong": "174.705383"
+}, {
+    "endLat": "-36.943233",
+    "endLong": "174.8936",
+    "name": "R82-EB - Highbrook Drive",
+    "ref": "R82-EB",
+    "startLat": "-36.951168",
+    "startLong": "174.859695"
+}, {
+    "endLat": "-36.952267",
+    "endLong": "174.858444",
+    "name": "R82-WB - Highbrook Drive",
+    "ref": "R82-WB",
+    "startLat": "-36.943233",
+    "startLong": "174.8936"
+}, {
+    "endLat": "-36.920216",
+    "endLong": "174.813385",
+    "name": "R83-EB - Neilson Street",
+    "ref": "R83-EB",
+    "startLat": "-36.925938",
+    "startLong": "174.776794"
+}, {
+    "endLat": "-36.927822",
+    "endLong": "174.782272",
+    "name": "R83-WB - Neilson Street",
+    "ref": "R83-WB",
+    "startLat": "-36.920216",
+    "startLong": "174.813385"
+}, {
+    "endLat": "-36.917",
+    "endLong": "174.833878",
+    "name": "R84-WB SH1 to Neilson Link",
+    "ref": "R84-WB",
+    "startLat": "-36.916031",
+    "startLong": "174.830994"
+}, {
+    "endLat": "-36.926456",
+    "endLong": "174.785843",
+    "name": "R85-SB - Onehunga Wharf Road",
+    "ref": "R85-SB",
+    "startLat": "-36.929626",
+    "startLong": "174.782974"
+}, {
+    "endLat": "-36.771782",
+    "endLong": "174.740402",
+    "name": "R86-EB - Wairua Road",
+    "ref": "R86-EB",
+    "startLat": "-36.769718",
+    "startLong": "174.721924"
+}, {
+    "endLat": "-36.769718",
+    "endLong": "174.721924",
+    "name": "R86-WB - Wairau Road",
+    "ref": "R86-WB",
+    "startLat": "-36.772346",
+    "startLong": "174.741333"
+}, {
+    "endLat": "-36.844677",
+    "endLong": "174.766663",
+    "name": "R87-NB - Queen Street",
+    "ref": "R87-NB",
+    "startLat": "-36.850891",
+    "startLong": "174.764511"
+}, {
+    "endLat": "-36.850891",
+    "endLong": "174.764511",
+    "name": "R87-SB - Queen Street",
+    "ref": "R87-SB",
+    "startLat": "-36.844677",
+    "startLong": "174.766663"
+}, {
+    "endLat": "-36.865364",
+    "endLong": "174.744522",
+    "name": "R99-NB - SH20 to Great North Rd",
+    "ref": "R99-NB",
+    "startLat": "-36.902504",
+    "startLong": "174.724915"
+}, {
+    "endLat": "-36.902504",
+    "endLong": "174.724915",
+    "name": "R99-SB - Great North Rd to SH20",
+    "ref": "R99-SB",
+    "startLat": "-36.865364",
+    "startLong": "174.744522"
+}]
