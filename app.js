@@ -3,6 +3,7 @@
  */
 
 var http = require('http');
+var https = require('https');
 var path = require('path');
 var express = require('express');
 var routes = require('./routes');
@@ -31,6 +32,45 @@ http.createServer(app).listen(app.get('port'), function() {
 });
 
 traffic.startPolling();
+
+
+var body = JSON.stringify({
+    "text": "TrAkl Heroku serever started"
+});
+var slackStatusWebhook = {
+    host: 'trakl.slack.com',
+    path: '/services/hooks/incoming-webhook?token=wiGtrM8aYAnbASZ10CIKGD7L',
+    method: 'POST',
+    headers: {
+        'Content-Type': 'application/json',
+        'Content-Length': body.length
+    }
+
+}
+
+
+var req = https.request(slackStatusWebhook, function(res) {
+    console.log("statusCode: ", res.statusCode);
+    console.log("headers: ", res.headers);
+
+     
+});
+
+if (process.env.PORT) {
+    console.log('dude');
+    req.write(body);
+    req.end();
+}
+
+// req.write(body);
+// req.end();
+
+req.on('error', function(e) {
+    console.error(e);
+});
+
+
+
 var UA_KEY = process.env['UA_KEY'] || "on local ua key not set";
 var UA_SECRET = process.env['UA_SECRET'] || "on local ua secret not set";
 var UA_MASTER_SECRET = process.env['UA_MASTER_SECRET'] || "on local master secret key not set";
