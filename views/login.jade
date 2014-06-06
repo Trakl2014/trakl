@@ -1,0 +1,21 @@
+extends layout
+
+block content
+  h1 Login test page
+  p You Sent: #{title} 
+  p Status: #{opID}
+  form( method="post")
+            div
+                div
+                    span.label login details :
+                    input(type="text", name="username", id="username")
+                    input(type="password", name="password", id="password")
+                
+                div#fbSubmit
+                    input(type="submit", value="login to fb")
+        a(href="/")!= "Back to Employee List"
+
+  h2 local login
+  form(method="post", action="/local-login")
+    input(type="text", name="username")
+    input(type="password", name="password", id="password")
