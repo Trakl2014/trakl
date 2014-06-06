@@ -18,11 +18,11 @@ var journeyData = {
         };
 
         var trafficOptions2 = {
-            host: 'tralk-traffic-api-v2.herokuapp.com',
+            host: 'trakl-traffic-api-v2.herokuapp.com',
             path: '/journeys'
         };
-        https.get(trafficOptions, function(trafficResponse) {
-            console.log(trafficOptions);
+        https.get(trafficOptions2, function(trafficResponse) {
+            console.log(trafficOptions2);
             var trafficData = '';
 
             trafficResponse.on('data', function(chunk) {
@@ -48,12 +48,12 @@ var journeyData = {
             path: '/journey?ref=' + journeyRef
         };
         var trafficOptions2 = {
-            host: 'tralk-traffic-api-v2.herokuapp.com',
+            host: 'trakl-traffic-api-v2.herokuapp.com',
             path: '/journey?ref=' + journeyRef
         };
         console.log('journeyRef: ' + journeyRef);
-        https.get(trafficOptions, function(trafficResponse) {
-            console.log(trafficOptions);
+        https.get(trafficOptions2, function(trafficResponse) {
+            console.log(trafficOptions2);
 
             var trafficData = '';
 
