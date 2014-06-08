@@ -19,13 +19,26 @@ angular.module('TraklFbApp', ['facebook'])
 
 .controller('MainController', [
     '$scope',
+    '$http',
     '$timeout',
     'Facebook',
-    function($scope, $timeout, Facebook) {
+    function($scope, $http, $timeout, Facebook) {
 
         // Define user empty data :/
         $scope.user = {};
-
+        $scope.dummy = {
+            "id": "10152538208191289",
+            "email": "leeblazek@gmail.com",
+            "first_name": "Lee",
+            "gender": "male",
+            "last_name": "Blazek",
+            "link": "https://www.facebook.com/app_scoped_user_id/10152538208191289/",
+            "locale": "en_US",
+            "name": "Lee Blazek",
+            "timezone": 12,
+            "updated_time": "2014-03-08T13:25:35+0000",
+            "verified": true
+        }
         // Defining user logged status
         $scope.logged = false;
 
@@ -72,6 +85,12 @@ angular.module('TraklFbApp', ['facebook'])
 
             });
         };
+
+        $scope.testhttp = function() {
+            $http.post('/createuser', $scope.dummy).success(function(data) {
+                console.log('data' + data);
+            });
+        }
 
         /**
          * me
