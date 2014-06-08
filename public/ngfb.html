@@ -1,0 +1,37 @@
+<html data-ng-app="CiulApp">
+
+  <head>
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0-rc2/css/bootstrap.min.css" type="text/css" />
+    <script data-require="angular.js@1.1.5" data-semver="1.1.5" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.1.5/angular.js"></script>
+    <script data-require"angular.js@1.1.5" data-semver="1.1.5" src="http://rawgithub.com/Ciul/angular-facebook/master/lib/angular-facebook.js"></script>
+    <script src="js/ngfb.js"></script>
+  </head>
+
+  <body data-ng-controller="MainController">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+          
+          <div class="page-header">
+            <h1>Hello ngFacebook! <small><a href="http://www.facebook.com/luiscarlosjayk" target="_blank">by Ciul</a></small> </h1>  
+          </div>
+          
+          <div>
+            <div class="alert alert-info" data-ng-show="salutation">Hello, {{user.name}}</div>
+            <div class="alert alert-warning" data-ng-show="byebye">Bye bye :'(</div>
+          </div>
+          
+          <button type="button" class="btn btn-primary btn-large" data-ng-show="!logged" data-ng-disabled="!facebookReady" data-ng-click="IntentLogin()">Login with Facebook</button>
+          <button type="button" class="btn btn-danger btn-large" data-ng-show="logged" data-ng-disabled="!facebookReady" data-ng-click="logout()">Logout</button>
+          
+          <div>
+            <debug val="user"></debug>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    
+  </body>
+
+</html>
