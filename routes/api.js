@@ -2,6 +2,28 @@ var router = require('express').Router();
 var traffic = require('../services/journey-data');
 var TravelTime = require('../models/travel-time');
 var journeyData = require('../services/journey-data');
+var User = require('../models/user');
+
+router.post('/createuser', function(req, res) {
+    var userInfo = JSON.stringify(req.body);
+    var userName = JSON.stringify(req.body.name)
+    res.send('create user ' + userInfo);
+    console.log('recieved user ' + userName);
+    // var newUser = new User(req.body);
+    // newUser.save(function(err) {
+    //     if (err) // ...
+    //         console.log('meow');
+    // }); 
+    User.findOneAndUpdate({
+        id: req.body.id
+    }, {
+        upsert: true,
+        "new": false
+    }).exec(function(err, User) {
+        console.dir(User);
+    });
+})
+
 
 /*
  * Private methods
@@ -32,7 +54,7 @@ var saveTravelTime = function(travelTime, res) {
 router.get('/travel-time', function(req, res) {
 
     var userId = req.param('userId');
-
+    console.log(userId);
     TravelTime.findOne({
         userId: userId
     }, function(err, result) {
@@ -40,27 +62,32 @@ router.get('/travel-time', function(req, res) {
             res.statusCode = 500;
             return res.send(err);
         }
+        //try catch added for if a bad userid is sent
+        try {
 
-        console.log('Travel min: ' + result.travelMinutes);
-        console.log('User id: ' + result.userId);
+            if (!result.travelMinutes) {
 
-        if (!result.travelMinutes) {
-            traffic.getJourneyTraffic(result.journeyRef, function(trafficData) {
-                if (trafficData.substr(0, 28) !== 'The page cannot be displayed') {
-                    var response = result;
-                    var trafficDetails = JSON.parse(trafficData);
-                    var isImproving = trafficDetails.minutes < trafficDetails.lastMinutes;
-                    response.travelMinutes = trafficDetails.minutes;
-                    response.isImproving = isImproving;
-                    res.json(response);
-                } else {
-                    console.log('No traffic data returned for ref: ' + result.journeyRef);
-                }
-            });
-        } else {
-            res.json(result);
+                traffic.getJourneyTraffic(result.journeyRef, function(trafficData) {
+                    if (trafficData.substr(0, 28) !== 'The page cannot be displayed') {
+                        var response = result;
+                        var trafficDetails = JSON.parse(trafficData);
+                        var isImproving = trafficDetails.minutes < trafficDetails.lastMinutes;
+                        response.travelMinutes = trafficDetails.minutes;
+                        response.isImproving = isImproving;
+                        res.json(response);
+                    } else {
+                        console.log('No traffic data returned for ref: ' + result.journeyRef);
+                    }
+                });
+
+            } else {
+                res.json(result);
+                console.log('Travel min: ' + result.travelMinutes);
+                console.log('User id: ' + result.userId);
+            }
+        } catch (e) {
+            console.log(e);
         }
-
     });
 
 });

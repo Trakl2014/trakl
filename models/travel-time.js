@@ -1,7 +1,7 @@
-var mongoose     = require('mongoose');
-var Schema       = mongoose.Schema;
+var mongoose = require('mongoose');
+var Schema = mongoose.Schema;
 
-var TravelTimeSchema   = new Schema({
+var TravelTimeSchema = new Schema({
     userId: String,
     journeyRef: String,
     travelMinutes: String,

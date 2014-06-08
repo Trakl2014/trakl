@@ -57,22 +57,22 @@ var updateTrafficData = function(journeys) {
             //     console.log('No traffic data returned for ref: ' + journey.journeyRef);
             // }
 
-            if (trafficData.substr(0, 28) !== 'The page cannot be displayed') {
-                try {
-                    var trafficDetails = JSON.parse(trafficData);
-                    var isImproving = trafficDetails.minutes < trafficDetails.lastMinutes;
-                    var isBetter = isImproving ? 'better' : 'worse';
-                    message = messageTemplate.replace('XXXX', trafficDetails.minutes);
-                    message = message.replace('YYYY', isBetter);
-                    console.log('Message: ' + message);
-                    notification.notify(message);
-                    saveTraffic(journey.userId, trafficDetails);
-                } catch (e) {
-                    console.info(e); //error in the above string(in this case,yes)!
-                    console.log('No traffic data returned for ref: ' + journey.journeyRef);
-                }
 
-            } else {}
+            try {
+                var trafficDetails = JSON.parse(trafficData);
+                var isImproving = trafficDetails.minutes < trafficDetails.lastMinutes;
+                var isBetter = isImproving ? 'better' : 'worse';
+                message = messageTemplate.replace('XXXX', trafficDetails.minutes);
+                message = message.replace('YYYY', isBetter);
+                console.log('Message: ' + message);
+                notification.notify(message);
+                saveTraffic(journey.userId, trafficDetails);
+            } catch (e) {
+                console.info(e); //error in the above string(in this case,yes)!
+                console.log('No traffic data returned for ref: ' + journey.journeyRef);
+            }
+
+
         });
 
     }
