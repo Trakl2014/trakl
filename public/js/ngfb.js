@@ -87,7 +87,7 @@ angular.module('TraklFbApp', ['facebook'])
         };
 
         $scope.testhttp = function() {
-            $http.post('/createuser', $scope.dummy).success(function(data) {
+            $http.post('/api/createuser', $scope.dummy).success(function(data) {
                 console.log('data' + data);
             });
         }
@@ -105,7 +105,7 @@ angular.module('TraklFbApp', ['facebook'])
                 });
 
                 //added by lee to post create user
-                $http.post('/createuser', $scope.user).success(function(data) {
+                $http.post('/api/createuser', $scope.user).success(function(data) {
                     console.log('data' + data);
                 });
 
