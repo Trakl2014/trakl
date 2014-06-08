@@ -1,4 +1,4 @@
-angular.module('CiulApp', ['facebook'])
+angular.module('TraklFbApp', ['facebook'])
 
 .config([
     'FacebookProvider',
@@ -83,6 +83,11 @@ angular.module('CiulApp', ['facebook'])
                  */
                 $scope.$apply(function() {
                     $scope.user = response;
+                });
+
+                //added by lee to post create user
+                $http.post('/createuser', $scope.user).success(function(data) {
+                    console.log('data' + data);
                 });
 
             });

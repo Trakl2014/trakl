@@ -12,7 +12,11 @@ router.get('/test', function(req, res) {
     });
 });
 
-
+router.post('/createuser', function(req, res) {
+    var user = JSON.stringify(req.body);
+    res.send('create user ' + user);
+    console.log(req.body);
+})
 /*
  * GET submitted page.
  */
