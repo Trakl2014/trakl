@@ -15,11 +15,11 @@ router.post('/createuser', function(req, res) {
     //         console.log('meow');
     // }); 
     User.findOneAndUpdate({
-        id: req.body.id
-    }, {
-        upsert: true,
-        "new": false
-    }).exec(function(err, User) {
+            id: req.body.id
+        },
+        req.body, {
+            upsert: true
+        }).exec(function(err, User) {
         console.dir(User);
     });
 })
