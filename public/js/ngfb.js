@@ -37,10 +37,13 @@ angular.module('TraklFbApp', ['facebook'])
             "timezone": 12,
             "updated_time": "",
             "verified": false,
-            "journey": ""
+            "journey": "",
+            "device": "",
+            "deviceIdentifier": ""
         };
         $scope.journeys = {};
         $scope.myJourney = {};
+        $scope.devices = ["ios", "android"];
 
         $scope.dummy = {
             "id": "10152538208191289",
@@ -54,7 +57,9 @@ angular.module('TraklFbApp', ['facebook'])
             "timezone": 144,
             "updated_time": "2014-03-08T13:25:35+0000",
             "verified": true,
-            "journey": ""
+            "journey": "",
+            "device": "device",
+            "deviceIdentifier": "dsdsdsd"
         }
         // Defining user logged status
         $scope.logged = false;

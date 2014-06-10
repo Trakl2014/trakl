@@ -17,7 +17,9 @@ var UserSchema = new Schema({
     timezone: String,
     updated_time: String,
     verified: String,
-    journey: String
+    journey: String,
+    deviceType: String,
+    deviceIdentifier: String
 });
 
 

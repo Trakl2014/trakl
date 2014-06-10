@@ -35,7 +35,9 @@
             <option value="">-- choose journey --</option>
           </select>
           <div ng-model="myJourney">Chosen Journey: {{myJourney.name}}</div>
-
+          <input type="text" ng-model="user.device"><br />
+          <input type="text" ng-model="user.deviceIdentifier">
+          <br>
 
           <button type="button" class="btn btn-primary btn-large" data-ng-show="!logged" data-ng-disabled="!facebookReady" data-ng-click="IntentLogin()">Login with Facebook</button>
           <button type="button" class="btn btn-danger btn-large" data-ng-show="logged" data-ng-disabled="!facebookReady" data-ng-click="logout()">Logout</button>
