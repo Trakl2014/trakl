@@ -26,6 +26,9 @@ angular.module('TraklFbApp', ['facebook'])
 
         // Define user empty data :/
         $scope.user = {};
+        $scope.journeys = {};
+        $scope.myJourney = {};
+
         $scope.dummy = {
             "id": "10152538208191289",
             "email": "leeblazek@gmail.com",
@@ -35,9 +38,10 @@ angular.module('TraklFbApp', ['facebook'])
             "link": "https://www.facebook.com/app_scoped_user_id/10152538208191289/",
             "locale": "en_US",
             "name": "Lee Blazek",
-            "timezone": 12,
+            "timezone": 144,
             "updated_time": "2014-03-08T13:25:35+0000",
-            "verified": true
+            "verified": true,
+            "journey": ""
         }
         // Defining user logged status
         $scope.logged = false;
@@ -45,6 +49,10 @@ angular.module('TraklFbApp', ['facebook'])
         // And some fancy flags to display messages upon user status change
         $scope.byebye = false;
         $scope.salutation = false;
+
+        $http.get('data/journeys-june2014.json').success(function(data) {
+            $scope.journeys = data;
+        })
 
         /**
          * Watch for Facebook to be ready.
@@ -87,8 +95,14 @@ angular.module('TraklFbApp', ['facebook'])
         };
 
         $scope.testhttp = function() {
+            $scope.dummy.journey = $scope.myJourney.name;
+
+
             $http.post('/api/createuser', $scope.dummy).success(function(data) {
+
                 console.log('data' + data);
+
+                console.log($scope.myJourney.name);
             });
         }
 

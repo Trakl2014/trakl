@@ -16,7 +16,8 @@ var UserSchema = new Schema({
     name: String,
     timezone: String,
     updated_time: String,
-    verified: String
+    verified: String,
+    journey: String
 });
 
 
