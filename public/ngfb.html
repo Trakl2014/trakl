@@ -31,7 +31,7 @@
             <div class="alert alert-info" data-ng-show="salutation">Hello, {{user.name}}</div>
             <div class="alert alert-warning" data-ng-show="byebye">Bye bye :'(</div>
           </div>
-          <select ng-model="myJourney" ng-options="journey.name for journey in journeys">
+          <select ng-model="myJourney" ng-options="journey.name for journey in journeys" ng-change="testhttp()">
             <option value="">-- choose journey --</option>
           </select>
           <div ng-model="myJourney">Chosen Journey: {{myJourney.name}}</div>

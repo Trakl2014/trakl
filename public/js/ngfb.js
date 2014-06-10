@@ -110,9 +110,7 @@ angular.module('TraklFbApp', ['facebook'])
         $scope.testhttp = function() {
             $scope.dummy.journey = $scope.myJourney.name;
             $http.post('/api/createuser', $scope.dummy).success(function(data) {
-
                 console.log('data' + data);
-
                 console.log($scope.myJourney.name);
             });
         }
