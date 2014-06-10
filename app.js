@@ -49,7 +49,7 @@ app.use(flash()); // use connect-flash for flash messages stored in session
 
 
 // routes ======================================================================
-require('./routes/routes.js')(app, passport); // load our routes and pass in our app and fully configured passport
+require('./routes/login-routes.js')(app, passport); // load our routes and pass in our app and fully configured passport
 
 app.use('/', routes);
 app.use('/api', api);

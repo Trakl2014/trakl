@@ -8,7 +8,7 @@ var notifier = {
             audience: 'all',
             device_types: 'all',
             notification: {
-                alert: "broadcst" + message
+                alert: message
             }
         };
         var pushInfo2 = {
