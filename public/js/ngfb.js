@@ -25,7 +25,20 @@ angular.module('TraklFbApp', ['facebook'])
     function($scope, $http, $timeout, Facebook) {
 
         // Define user empty data :/
-        $scope.user = {};
+        $scope.user = {
+            "id": "",
+            "email": "",
+            "first_name": "",
+            "gender": "",
+            "last_name": "",
+            "link": "",
+            "locale": "",
+            "name": "",
+            "timezone": 12,
+            "updated_time": "",
+            "verified": false,
+            "journey": ""
+        };
         $scope.journeys = {};
         $scope.myJourney = {};
 
@@ -96,8 +109,6 @@ angular.module('TraklFbApp', ['facebook'])
 
         $scope.testhttp = function() {
             $scope.dummy.journey = $scope.myJourney.name;
-
-
             $http.post('/api/createuser', $scope.dummy).success(function(data) {
 
                 console.log('data' + data);
@@ -115,7 +126,18 @@ angular.module('TraklFbApp', ['facebook'])
                  * Using $scope.$apply since this happens outside angular framework.
                  */
                 $scope.$apply(function() {
-                    $scope.user = response;
+                    // $scope.user = response;
+                    $scope.user.id = response.id;
+                    $scope.user.email = response.email;
+                    $scope.user.first_name = response.first_name;
+                    $scope.user.gender = response.gender;
+                    $scope.user.link = response.link;
+                    $scope.user.locale = response.locale;
+                    $scope.user.name = response.name;
+                    $scope.user.timezone = response.timezone;
+                    $scope.user.updated_time = response.updated_time;
+                    $scope.user.verified = response.verified;
+                    $scope.user.journey = $scope.myJourney.name;
                 });
 
                 //added by lee to post create user
