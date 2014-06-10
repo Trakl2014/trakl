@@ -2,15 +2,27 @@ var router = require('express').Router();
 var journeyData = require('../services/journey-data');
 var notification = require('../services/notification.js');
 
-/*
- * GET home page.
- */
+// normal routes ===============================================================
 
-router.get('/test', function(req, res) {
-    res.render('test', {
-        title: 'The begining of of hackakl project'
+// show the home page (will also have our login links)
+router.get('/', function(req, res) {
+    res.render('index.ejs');
+});
+
+// PROFILE SECTION =========================
+router.get('/profile', isLoggedIn, function(req, res) {
+    res.render('profile.ejs', {
+        user: req.user
     });
 });
+
+// LOGOUT ==============================
+router.get('/logout', function(req, res) {
+    req.logout();
+    res.redirect('/');
+});
+
+
 
 
 /*
@@ -48,5 +60,13 @@ router.post('/', function(req, res) {
     });
 
 });
+
+// route middleware to ensure user is logged in
+function isLoggedIn(req, res, next) {
+    if (req.isAuthenticated())
+        return next();
+
+    res.redirect('/');
+}
 
 module.exports = router;
