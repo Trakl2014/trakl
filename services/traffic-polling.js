@@ -41,7 +41,6 @@ var updateTrafficData = function(journeys) {
     for (var i = 0; i < journeys.length; i++) {
 
         journey = journeys[i];
-
         traffic.getJourneyTraffic(journey.journeyRef, function(trafficData) {
             // if (trafficData.substr(0, 28) !== 'The page cannot be displayed') {
 
@@ -78,6 +77,8 @@ var updateTrafficData = function(journeys) {
     }
 
 };
+
+
 
 var activatePolling = function(storedJourneys) {
 

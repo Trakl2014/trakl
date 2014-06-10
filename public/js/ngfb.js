@@ -27,6 +27,7 @@ angular.module('TraklFbApp', ['facebook'])
         // Define user empty data :/
         $scope.user = {
             "id": "",
+            "userId": "",
             "email": "",
             "first_name": "",
             "gender": "",
@@ -47,6 +48,7 @@ angular.module('TraklFbApp', ['facebook'])
 
         $scope.dummy = {
             "id": "10152538208191289",
+            "userId": "",
             "email": "leeblazek@gmail.com",
             "first_name": "Lee",
             "gender": "male",
@@ -131,6 +133,7 @@ angular.module('TraklFbApp', ['facebook'])
                 $scope.$apply(function() {
                     // $scope.user = response;
                     $scope.user.id = response.id;
+                    $scope.user.userId = response.id;
                     $scope.user.email = response.email;
                     $scope.user.first_name = response.first_name;
                     $scope.user.gender = response.gender;

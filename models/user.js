@@ -2,11 +2,8 @@ var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
 var UserSchema = new Schema({
-    // userId: String,
-    // journeyRef: String,
-    // travelMinutes: String,
-    // isImproving: String,
     id: String,
+    userId: String,
     email: String,
     first_name: String,
     gender: String,
@@ -17,9 +14,12 @@ var UserSchema = new Schema({
     timezone: String,
     updated_time: String,
     verified: String,
-    journey: String,
+    journeyRef: String,
     deviceType: String,
-    deviceIdentifier: String
+    deviceIdentifier: String,
+    travekMinutes: String,
+    isImproving: String
+
 });
 
 
