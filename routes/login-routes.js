@@ -4,13 +4,13 @@ module.exports = function(app, passport) {
 
     app.get('/rest-loggedin', function(req, res) {
         res.send(req.isAuthenticated() ? req.user : '0');
-        console.log(req);
+
     });
 
     // route to log in
     app.post('/rest-login', passport.authenticate('local-login'), function(req, res) {
         res.send(req.user);
-        console.log(req);
+
     });
 
     // route to log out

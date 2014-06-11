@@ -3,6 +3,7 @@
     var onsenApp = angular.module('myApp', ['onsen.directives', 'ngResource']);
     onsenApp.controller('dataCtrl', function($scope, $http, $interval, $rootScope) {
         $scope.data = [];
+        $scope.user = [];
         $scope.sampleResponse_old = {
             "userId": "24",
             "journeyRef": "tamaki",
@@ -44,20 +45,23 @@
             // });
         }
         $scope.fetch();
-        // $interval($scope.fetch, 5000);
+        $interval($scope.fetch, 5000);
         $scope.login = function() {
+            if ($scope.user.username == undefined) {
+                $rootScope.message = 'You must enter a username and password '
+            }
             $http.post('/rest-login', {
                 email: $scope.user.username,
                 password: $scope.user.password,
             })
                 .success(function(user) {
                     // No error: authentication OK
-                    $rootScope.message = 'Authentication successful!';
+                    $rootScope.message = 'Welcome ' + $scope.user.username;
                     // $location.url('/admin');
                 })
                 .error(function() {
                     // Error: authentication failed
-                    $rootScope.message = 'Authentication failed.';
+                    $rootScope.message = 'Please re-enter your username and password';
                     // $location.url('/login');
                 });
         };
