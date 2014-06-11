@@ -1,0 +1,34 @@
+<ons-page class="center">
+	<ons-scroller>
+		<div class=" mainDisplay"  ng-controller="dataCtrl" >
+			<div class="loader" ng-show="showLoader">
+			getting traffic data...
+		</div>
+
+			<div class="dontgo" ng-class="{gohome: sampleResponse.isImproving}" ng-hide="showLoader">
+				<p>to:</p>
+			<h1>Home</h1>
+			
+			<!-- 	<div class="pieContainer">
+			<div class="pieBackground"></div>
+			     <div id="pieSlice1" class="hold"><div class="pie"></div></div>
+			</div> -->
+			<div class="travelTime">{{sampleResponse.travelMinutes}}</div>
+			<div class="trendIndicator" ></div>
+			<p>Travel time in minutes above <br>refreshes every 5 seconds.</p>
+
+			<!-- <p>{{sampleResponse.userId}}</p> -->
+
+			<!-- <h2>Navigator</h2>
+			<ons-button ng-click="ons.$get('#main-navigator').pushPage('page3.html', { title: 'Page 3' })">
+				Push Page 3
+			</ons-button> -->
+
+			</div>
+			
+
+		</div>
+		
+
+	</ons-scroller>	
+</ons-page>

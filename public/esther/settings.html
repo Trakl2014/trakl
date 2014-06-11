@@ -1,0 +1,94 @@
+
+
+<ons-navigator  title="Settings">  
+	<ons-page class="left" style="border-left: 1px solid #ccc" ng-controller="dataCtrl">
+		<ons-scroller >
+		<div class="page-padding">
+			 <p class="warning">
+			 	THESE SETTINGS ARE TO DEMO WHAT WILL BE COMING IN A FEW WEEKS
+			 </p>
+
+<!-- 		    <label class="topcoat-switch">	
+			  <input type="checkbox" class="topcoat-switch__input">
+			  <div class="topcoat-switch__toggle"></div> 
+			</label> -->
+			<form ng-submit="login()" class="ng-scope ng-pristine ng-valid">
+				<h2>{{message}}</h2>
+			  <p>
+			    <label class="control-label">Username</label>
+			  	<input type="text" placeholder="Username" ng-model="user.username" class="ng-pristine ng-valid">
+			  </p>
+			  <p>
+			    <label class="control-label">Password</label>
+			  	<input type="password" placeholder="Password" ng-model="user.password" class="ng-pristine ng-valid"><br>
+			  </p>
+			  <p>
+			    <button type="submit" class="btn btn-primary">Login</button>
+			  </p>
+			</form>
+			<ons-checkbox 
+		      ng-model="answer" 
+		      ng-true-value="YES" 
+		      ng-false-value="NO">
+		      Turn off push notifications?
+		      		    <span>{{answer}}</span>
+		    </ons-checkbox>
+			<h2>Choose Start Time: {{startTime}} pm</h2>
+		      <ons-radio-button 
+		          ng-model="startTime" 
+		          value="4" 
+		          right-label="4pm" 
+		          name="start-time-group" ng-selected="selected">
+		      </ons-radio-button>
+
+		      <ons-radio-button 
+		          ng-model="startTime" 
+		          value="5" 
+		          right-label="5pm" 
+		          name="start-time-group">
+		      </ons-radio-button>
+
+		      <ons-radio-button 
+		          ng-model="startTime" 
+		          value="6" 
+		          right-label="6pm" 
+		          name="start-time-group">
+		      </ons-radio-button>
+
+
+
+		      <h2>Choose Duration: {{duration}} hrs</h2>
+		      <ons-radio-button 
+		          ng-model="duration" 
+		          value="1" 
+		          right-label="1hr" 
+		          name="duration-group">
+		      </ons-radio-button>
+
+		      <ons-radio-button 
+		          ng-model="duration" 
+		          value="2" 
+		          right-label="2hrs" 
+		          name="duration-group">
+		      </ons-radio-button>
+
+		      <ons-radio-button 
+		          ng-model="duration" 
+		          value="3" 
+		          right-label="3hrs" 
+		          name="duration-group">
+		      </ons-radio-button>
+
+
+
+			<!-- <label for="">Where do like to get social beverage after work?</label>
+			<ons-select ng-model="selectedValue">    
+		      <option value="One">Parnell</option>
+		      <option value="Two">Viaduct</option>
+		      <option value="Three">Ponsonby</option>
+		    </ons-select>
+			</div> -->
+		</ons-scroller>	
+	</ons-page>
+
+</ons-navigator>

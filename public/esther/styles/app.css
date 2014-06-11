@@ -1,0 +1,200 @@
+.page-padding {
+     padding: 10px;
+}
+.pieContainer {
+          height: 100px;
+         
+     }
+     .pieBackground {
+          background-color: blue;
+          position: absolute;
+          width: 200px;
+          height: 200px;
+          -moz-border-radius: 100px;
+          -webkit-border-radius: 100px;
+          -o-border-radius: 100px;
+          border-radius: 100px;
+          -moz-box-shadow: -1px 1px 3px #000;
+          -webkit-box-shadow: -1px 1px 3px #000;
+          -o-box-shadow: -1px 1px 3px #000;
+          box-shadow: -1px 1px 3px #000;
+     } 
+     .pie {
+          position: absolute;
+          width: 200px;
+          height: 200px;
+          -moz-border-radius: 100px;
+          -webkit-border-radius: 100px;
+          -o-border-radius: 100px;
+          border-radius: 100px;
+          clip: rect(0px, 100px, 200px, 0px);
+     }
+     .hold {
+          position: absolute;
+          width: 200px;
+          height: 200px;
+          -moz-border-radius: 100px;
+          -webkit-border-radius: 100px;
+          -o-border-radius: 100px;
+          border-radius: 100px;
+          clip: rect(0px, 200px, 200px, 100px);
+     }
+     #pieSlice1 .pie {
+          background-color: #99c380;
+          -webkit-transform:rotate(50deg);
+          -moz-transform:rotate(50deg);
+          -o-transform:rotate(50deg);
+          transform:rotate(50deg);
+     }
+
+
+/*arc color   #99c380 */
+
+/*arc color #da7d82;*/
+.dontgo {
+     background-color: #fecccc;
+     color: #c1272e;
+}
+
+.gohome {
+     background-color: #D7F4D7;
+     color: #106837;
+     height: 690px;
+}
+
+.attributions li {
+     list-style-type: none;
+}
+
+.travelTime {
+/*     width:150px;*/
+     margin: 20px auto;
+     font-size: 170px;
+
+}
+
+.trendIndicator {
+     background-repeat: no-repeat;
+     width: 50%;
+     height: 75px;
+     margin: 20px auto;  
+     max-width: 313px;
+     background-size:contain;
+}
+
+
+.dontgo .trendIndicator {
+     background-image: url(../img/red-arrow.svg);
+}
+
+.gohome .trendIndicator {
+     background-image: url(../img/green-arrow.svg);
+
+}.page-padding {
+     padding: 10px;
+}
+.pieContainer {
+          height: 100px;
+         
+     }
+     .pieBackground {
+          background-color: blue;
+          position: absolute;
+          width: 200px;
+          height: 200px;
+          -moz-border-radius: 100px;
+          -webkit-border-radius: 100px;
+          -o-border-radius: 100px;
+          border-radius: 100px;
+          -moz-box-shadow: -1px 1px 3px #000;
+          -webkit-box-shadow: -1px 1px 3px #000;
+          -o-box-shadow: -1px 1px 3px #000;
+          box-shadow: -1px 1px 3px #000;
+     } 
+     .pie {
+          position: absolute;
+          width: 200px;
+          height: 200px;
+          -moz-border-radius: 100px;
+          -webkit-border-radius: 100px;
+          -o-border-radius: 100px;
+          border-radius: 100px;
+          clip: rect(0px, 100px, 200px, 0px);
+     }
+     .hold {
+          position: absolute;
+          width: 200px;
+          height: 200px;
+          -moz-border-radius: 100px;
+          -webkit-border-radius: 100px;
+          -o-border-radius: 100px;
+          border-radius: 100px;
+          clip: rect(0px, 200px, 200px, 100px);
+     }
+     #pieSlice1 .pie {
+          background-color: #99c380;
+          -webkit-transform:rotate(50deg);
+          -moz-transform:rotate(50deg);
+          -o-transform:rotate(50deg);
+          transform:rotate(50deg);
+     }
+
+
+/*arc color   #99c380 */
+
+/*arc color #da7d82;*/
+.dontgo {
+     background-color: #fecccc;
+     color: #c1272e;
+     padding: 10px;
+/*     margin: -15px -10px 0 -10px;*/
+}
+
+.gohome {
+     background-color: #D7F4D7;
+     color: #106837;
+     height: 690px;
+}
+
+.attributions li {
+     list-style-type: none;
+}
+
+.travelTime {
+/*     width:150px;*/
+     margin: 20px auto;
+     font-size: 170px;
+
+}
+
+.trendIndicator {
+     background-repeat: no-repeat;
+     width: 50%;
+     height: 75px;
+     margin: 20px auto;  
+     max-width: 313px;
+     background-size:contain;
+}
+
+
+.dontgo .trendIndicator {
+     background-image: url(../img/red-arrow.svg);
+}
+
+.gohome .trendIndicator {
+     background-image: url(../img/green-arrow.svg);
+
+}
+.img-50 img {
+     width: 50%;
+}
+
+.loader {
+     background: url(../img/362.GIF) no-repeat center;
+     width: 220px;
+     height: 280px;
+     margin: auto;
+     padding: 20px;
+
+
+}
