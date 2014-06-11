@@ -1,0 +1,13 @@
+html, body {
+	background: #3ecbcd;
+	color: #fff;
+}
+
+.jumbotron {
+	background: transparent;
+}
+
+.big_logo {
+	width:100%;
+	max-width: 300px;
+}
