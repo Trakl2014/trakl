@@ -19,7 +19,8 @@ var notifier = {
             },
             device_types: 'all',
             notification: {
-                alert: message
+                alert: message,
+                sound: "beep.wav"
             }
         };
         /*

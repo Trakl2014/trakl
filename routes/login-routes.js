@@ -9,6 +9,8 @@ module.exports = function(app, passport) {
 
     // route to log in
     app.post('/rest-login', passport.authenticate('local-login'), function(req, res) {
+        res.header("Access-Control-Allow-Origin", "*");
+        res.header("Access-Control-Allow-Headers", "X-Requested-With");
         res.send(req.user);
 
     });
