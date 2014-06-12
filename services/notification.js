@@ -8,7 +8,9 @@ var notifier = {
             audience: 'all',
             device_types: 'all',
             notification: {
-                alert: message
+                alert: message,
+                sound: "beep.wav"
+
             }
         };
         var pushInfo2 = {
