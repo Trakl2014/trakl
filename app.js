@@ -94,7 +94,6 @@ var req = https.request(slackStatusWebhook, function(res) {
 });
 
 if (process.env.PORT) {
-
     req.write(body);
     req.end();
 }
