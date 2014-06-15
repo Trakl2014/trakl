@@ -27,6 +27,8 @@ var userSchema = mongoose.Schema({
         email: String,
         name: String
     },
+    deviceTokens: [],
+    apids: [],
     devices: {
         deviceTokens: [],
         apids: []

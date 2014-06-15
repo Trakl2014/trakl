@@ -1,3 +1,6 @@
+// load up the user model
+var User = require('../models/user');
+
 module.exports = function(app, passport) {
 
     //rest login ===================================================================
@@ -9,8 +12,56 @@ module.exports = function(app, passport) {
 
     // route to log in
     app.post('/rest-login', passport.authenticate('local-login'), function(req, res) {
+
+        // trying cors to make testing easier remove later
         res.header("Access-Control-Allow-Origin", "*");
         res.header("Access-Control-Allow-Headers", "X-Requested-With");
+        console.log(req.query.deviceid);
+        // res.send(req.user);
+
+
+
+        //find user, get their device tokens, and insert if token desont exist
+        if (req.query.deviceid) {
+            User.findOneAndUpdate({
+                'local.email': req.query.email
+            }, {
+                $addToSet: {
+                    deviceTokens: req.query.deviceid
+                }
+            }, {
+                safe: true,
+                upsert: true
+            }, function(err, deviceid) {
+                // Handle err
+            });
+
+
+            //find user, get their device tokens, and insert if token desont exist
+            // User.findOne({
+            //     'local.email': req.query.email
+            // }, function(err, user) {
+            //     var deviceIdExists = false;
+            //     // if there are any errors, return the error
+            //     if (err)
+            //         return 'error';
+            //     // if no user is found, return the message
+            //     if (!user)
+            //         return done(null, false, req.flash('loginMessage', 'No user found.'));
+            //     // all is well, return user
+            //     else
+            //         console.log(user.deviceTokens);
+            //     user.deviceTokens.addToSet(req.query.deviceid);
+            //     user.save();
+            //     console.log(user.deviceTokens);
+
+            // });
+
+
+        }
+
+
+
         res.send(req.user);
 
     });
