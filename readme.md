@@ -10,13 +10,18 @@ On the web site, you can choose from one of a number of predefined routes and se
 
 The REST API supports the web site and [mobile apps](http://github.com/Trakl2014/trakl-cordova-apps) with travel minutes and trend direction. This API consumes the [trakl-traffic-api](http://github.com/Trakl2014/trackl-traffic-api), which exposes data from the [NZTA open data](https://infoconnect.highwayinfo.govt.nz/opencms/opencms/infoconnect) source.
 
+##user registation 
+
+http://trakl.herokuapp.com/login-home - sign in with email/pass and link your Facebook and twitter accounts.  at the moment you will need the email/pass setup to login from app.  At a future date login can be strait Facebook or twitter.
+
+
+
 ## What's not included
 
-There are 2 missing features that prevent the Trakl platform from being useful to the masses: custom routes and user registration.
+There is 1 missing features that prevent the Trakl platform from being useful to the masses: custom routes .
 
 Currently you can only choose a predefined route. We need to add the ability to choose specific start and destination locations of a route and make all calculations and notifications based on the specified route.
 
-A user registration feature will allow the platform to associate individual users with their specific route. We intend to use OAuth2 with popular social networks (Twitter, Facebook, Google, Microsoft, etc) as a starting place and include a username/password option later.
 
 ## Installation
 
