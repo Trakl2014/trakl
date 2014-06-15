@@ -16,6 +16,8 @@ module.exports = function(app, passport) {
         // trying cors to make testing easier remove later
         res.header("Access-Control-Allow-Origin", "*");
         res.header("Access-Control-Allow-Headers", "X-Requested-With");
+        var body = JSON.stringify(req.body.deviceid)
+        console.log(req.query.deviceid + " " + req.body.deviceid);
 
         // res.send(req.user);
 
