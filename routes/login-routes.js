@@ -16,7 +16,7 @@ module.exports = function(app, passport) {
         // trying cors to make testing easier remove later
         res.header("Access-Control-Allow-Origin", "*");
         res.header("Access-Control-Allow-Headers", "X-Requested-With");
-        console.log(req.query.deviceid);
+
         // res.send(req.user);
 
 
@@ -24,10 +24,10 @@ module.exports = function(app, passport) {
         //find user, get their device tokens, and insert if token desont exist
         if (req.query.deviceid) {
             User.findOneAndUpdate({
-                'local.email': req.query.email
+                'local.email': req.body.email
             }, {
                 $addToSet: {
-                    deviceTokens: req.query.deviceid
+                    deviceTokens: req.body.deviceid
                 }
             }, {
                 safe: true,
