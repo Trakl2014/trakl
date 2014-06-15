@@ -24,7 +24,7 @@ module.exports = function(app, passport) {
 
 
         //find user, get their device tokens, and insert if token doesn't exist
-        if (req.query.deviceid) {
+        if (req.body.deviceid) {
             User.findOneAndUpdate({
                 'local.email': req.body.email
             }, {
