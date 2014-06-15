@@ -17,7 +17,7 @@ module.exports = function(app, passport) {
         res.header("Access-Control-Allow-Origin", "*");
         res.header("Access-Control-Allow-Headers", "X-Requested-With");
         var body = JSON.stringify(req.body.deviceid)
-        console.log(req.query.deviceid + " " + req.body.deviceid);
+        console.log("rest login" + req.query.deviceid + " " + req.body.deviceid);
 
         // res.send(req.user);
 
