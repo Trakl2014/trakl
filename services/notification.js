@@ -5,14 +5,24 @@ var notifier = {
     notify: function(message, callback) {
 
         var pushInfoBroadcast = {
-            audience: 'all',
-            device_types: 'all',
-            notification: {
-                alert: message,
-                sound: "beep.wav"
-
+            "audience": "all",
+            "device_types": "all",
+            "notification": {
+                "alert": message
             }
         };
+
+        var pushInfoBroadcast2 = {
+            "audience": "all",
+            "notification": {
+                "alert": message,
+                "ios": {
+                    "sound": "default"
+                },
+            },
+            "device_types": ["ios", "android"]
+        };
+
         var pushInfo2 = {
             audience: {
                 "device_token": "338D46DE552760457ACA1E537E5DCC315C8B37E2E5E3C85624B15B5215DEBB17"
@@ -41,7 +51,7 @@ var notifier = {
 
         var urbanAirshipPush = new UrbanAirshipPush(config);
 
-        urbanAirshipPush.push.send(pushInfoBroadcast, function(err, data) {
+        urbanAirshipPush.push.send(pushInfoBroadcast2, function(err, data) {
 
             if (err) {
                 // TODO: Handle error
