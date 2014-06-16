@@ -21,8 +21,6 @@ module.exports = function(app, passport) {
 
         // res.send(req.user);
 
-
-
         //find user, get their device tokens, and insert if token doesn't exist
         if (req.body.deviceid) {
             User.findOneAndUpdate({
@@ -63,7 +61,22 @@ module.exports = function(app, passport) {
 
         }
 
-
+        // for android apids
+        if (req.body.apid) {
+            User.findOneAndUpdate({
+                'local.email': req.body.email
+            }, {
+                $addToSet: {
+                    apids: req.body.apid
+                }
+            }, {
+                safe: true,
+                upsert: true
+            }, function(err, deviceid) {
+                // Handle err
+                console.log('rest-login error' + err + " apid" + req.body.apid)
+            });
+        }
 
         res.send(req.user);
 
