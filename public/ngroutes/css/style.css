@@ -1,0 +1,143 @@
+/* Google Map Fix: http://stackoverflow.com/questions/9141249/twitter-bootstrap-css-affecting-google-maps*/
+#map img {
+    max-width: none;
+}
+#map label {
+    width: auto; display:inline;
+}
+
+body
+{
+	margin:0px;padding:0px;
+	overflow:hidden;
+}
+body *
+{
+	font-family:Verdana;
+}
+.header
+{
+	height:40px;
+	min-width:1024px;
+	background-color:#3ecbcd;
+    background-image:url(../images/esther_website_header_logo.png);
+    background-repeat: no-repeat;
+    background-position-y:center;
+    background-position-x: 20px;
+}
+.banner{
+    background-image:url(../images/esther_feature_1024x500.png);
+    background-position-y:center;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+/* footer panel */
+.footer
+{
+	height:20px;
+	background-color:#3ecbcd;
+}
+
+/* separators */
+.separator
+{
+	width:20px; background-image:url(../images/seperator.png); height:inherit; background-position:center; background-repeat:no-repeat;
+}
+
+.goog-button
+{
+    cursor: pointer; -webkit-user-select: none; text-align: center;
+    font-family: Arial, sans-serif; font-size: 13px; box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px; color: rgb(0, 0, 0); border: 1px solid rgb(113, 123, 135);
+    background-color: rgb(255, 255, 255); z-index: 0;width: auto;
+    padding-left: 4px; padding-right: 4px;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+	height:8px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 0px;
+	background-color:#fff;
+}
+::-webkit-scrollbar-track:hover {
+    border-radius: 0px;
+	background-color:#efefef;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+	background-color:#bbb;
+}
+.degrading{
+    position: relative;
+    background-color: #fecccc;
+    /*background-image:url(../images/red-arrow.svg);
+    background-position: 50% 70%;
+    background-repeat: no-repeat;*/
+}
+.trip-home{
+    text-align: center;
+    margin-top: 40px;
+    font-size: 20pt;
+}
+.text-home{
+    text-align: center;
+    font-size: 42pt;
+}
+.powered-by{
+    width:109px;
+    height: 40px;
+    float: right;
+    background-image:url(../images/esther_website_header_poweredby.png);
+    background-repeat: no-repeat;
+    background-position-y:center;
+}
+.degrading-arrow{
+   position: absolute;
+    bottom: 40px;
+    width: 100%;
+    height: 30%;
+    background-image: url(../images/red-arrow.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.degrading-text {
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+    color: #da7d82;
+}
+.degrading-value{
+    text-align: center;
+    color: #c1272e;
+    font-size:130pt;
+}
+.improving-arrow{
+    position: absolute;
+    bottom: 40px;
+    width: 100%;
+    height: 30%;
+    background-image: url(../images/green-arrow.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.improving-text {
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+    color: #99c3ae;
+}
+.improving-value{
+    text-align: center;
+    color: #106837;
+    font-size:130pt;
+}

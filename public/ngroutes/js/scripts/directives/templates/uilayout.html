@@ -1,0 +1,40 @@
+﻿<div class="ui-layout-west">
+    <div id="leftPanel" style="position: relative;">
+        <div class="">
+            <span style="margin-left: 20px; float:left;">Journeys: </span><span class="pin-button" style="float: right;"></span>
+        </div>
+        <div style="margin-left: 20px;">
+            <select id="ddlRoute" ng-model="selectedJourney" ng-options="journey as journey.name for journey in journeys" ng-change="ddlRouteChange()" style="width:90%;">
+                <option value="">-- choose journey --</option>
+            </select>
+        </div>
+
+        <div class="trip-home">
+            Your trip
+        </div>
+        <div class="text-home">
+            HOME
+        </div>
+
+        <div class="degrading-value">
+            <div class="text-time">29</div>
+            <div style="font-size:20pt;">MINUTES</div>
+        </div>
+        <div class="degrading-arrow">
+        </div>
+        <div class="degrading-text">CONDITIONS DEGRADING</div>
+
+        <div class="improving-value">
+            <div class="text-time">29</div>
+            <div style="font-size:20pt;">MINUTES</div>
+        </div>
+        <div class="improving-arrow">
+        </div>
+        <div class="improving-text">CONDITIONS IMPROVING</div>
+
+    </div>
+</div>
+<div class="ui-layout-center">
+    <div id="map" class="map w100"></div>
+
+</div>
